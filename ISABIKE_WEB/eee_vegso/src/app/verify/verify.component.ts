@@ -27,9 +27,8 @@ export class VerifyComponent implements OnInit {
     };
     this.userAuthService.verifyAccount(payload)
       .then(({ data }) => {
-        //localStorage.setItem('token', data.token);
         this.verificationSuccess = true;
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('/login');
         return data;
       })
       .catch(error => {
@@ -39,5 +38,6 @@ export class VerifyComponent implements OnInit {
         }
         return error;
       });
+      alert("Sikeres a viszaigazólás")
   }
 }

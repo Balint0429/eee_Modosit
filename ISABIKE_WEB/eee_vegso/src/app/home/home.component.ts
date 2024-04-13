@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
-import { Router } from '@angular/router'; // Importáljuk a Router-t
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-home',
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
 
   products: any[] = [];
 
-  constructor(private productService: ProductService, private router: Router) { } // Adjuk hozzá a Router-t a konstruktor paramétereként
+  constructor(private productService: ProductService, private router: Router) { } 
 
   ngOnInit(): void {
     this.getProducts();

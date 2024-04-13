@@ -33,26 +33,5 @@ export class RegisterComponent implements OnInit {
     }
     const {felhasznalo_nev, kereszt_nev, vezetek_nev, email, password} = this.registerForm.value;
     this.userAuthService.register(felhasznalo_nev, kereszt_nev, vezetek_nev, email, password)
-    // this.isSubmitting = true;
-    // let payload:RegistrationPayload = {
-    //   userName: this.userName,
-    //   firstName: this.firstName, 
-    //   lastName: this.lastName,
-    //   email: this.email,
-    //   password: this.password
-    // };
-
-    // this.userAuthService.register(payload)
-    //   .then(({ data }) => {
-    //     localStorage.setItem('token', data.token);
-    //     this.router.navigateByUrl('/verify');
-    //     return data;
-    //   }).catch(error => {
-    //     this.isSubmitting = false;
-    //     if (error.response.data.errors !== undefined) {
-    //       this.validationErrors = error.response.data.errors;
-    //     }
-    //     return error;
-    //   });
   }
 }

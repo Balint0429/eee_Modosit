@@ -38,19 +38,19 @@
           <th>Elérhetőség: </th>
           <td>{{ termek[0].elerheto ? 'Elérhető' : 'Nem Elérhető' }}</td>
         </tr>
-        <div class="row">
-          <div class="col">
-            <button (click)="goBack()">Másik termék megtekintése</button>
-          </div>
-          <div class="col">
-            <button (click)="addCart()">Hozzáadás a kosárhoz</button>
-          </div>
-        </div>
       </table>
+      <div class="row">
+        <div class="col">
+          <button (click)="goBack()">Másik termék megtekintése</button>
+        </div>
+        <div class="col">
+          <button *ngIf="isLoggedIn()" (click)="addCart()">Hozzáadás a kosárhoz</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <footer>
-  <p>&copy; 2024 Rólunk Kerékpárüzlet. Minden jog fenntartva.</p>
+  <p>&copy; 2024 ISABIKE Kerékpárüzlet. Minden jog fenntartva.</p>
 </footer>
 

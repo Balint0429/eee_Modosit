@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router'; // Import Router
+import { ActivatedRoute, Router } from '@angular/router'; 
 import { ProductService } from '../product.service';
 import { CartService } from '../cart.service';
 
@@ -13,7 +13,7 @@ export class TermekComponent implements OnInit {
   constructor(private route: ActivatedRoute,
     private productService: ProductService,
     private router: Router,
-    private cart: CartService) { } // Inject Router service
+    private cart: CartService) { } 
 
   ngOnInit(): void {
     this.getProductDetails();
@@ -47,4 +47,12 @@ export class TermekComponent implements OnInit {
       }
     })
   }
+
+  isLoggedIn(){
+    if(localStorage.getItem("token")){
+        return true
+    } else{
+        return false
+    }
+}
 }

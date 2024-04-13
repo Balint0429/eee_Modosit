@@ -28,20 +28,19 @@ export class AppComponent {
 
   logout() {
     let token = localStorage.getItem("token")
-    this.auth.logout(token).subscribe((res)=>{
-      console.log(res)
-      alert("Sikeres kijelentkezés")
-    })
     this.router.navigateByUrl('/home');
     localStorage.removeItem('token');
     localStorage.removeItem('userData');
     localStorage.removeItem('userName');
+    this.auth.logout(token).subscribe((res)=>{
+      console.log(res)
+      alert("Sikeres kijelentkezés")
+    })
   }
   isLoggedIn(){
     if(localStorage.getItem("token")){
         return true
-    }
-    else{
+    } else{
         return false
     }
 }

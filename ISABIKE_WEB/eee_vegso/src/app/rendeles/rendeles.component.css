@@ -1,3 +1,15 @@
 .container{
     width: 80%;
 }
+.outer-container {
+    background-color: #f0f0f0;
+    padding: 20px; 
+    min-height: 100vh;
+   
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }

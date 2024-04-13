@@ -1,4 +1,3 @@
-// login.component.ts
 import { Component, OnInit } from '@angular/core';
 import { UserAuthService } from '../user-auth.service';
 import { Router } from '@angular/router';

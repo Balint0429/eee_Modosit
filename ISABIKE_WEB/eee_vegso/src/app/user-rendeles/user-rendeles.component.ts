@@ -22,7 +22,6 @@ export class UserRendelesComponent implements OnInit {
       (res) => {
         if (res.success === true) {
           this.rendelesData = res.data;
-          //console.log(this.rendelesData);
         }
       },
       (error) => {
@@ -39,7 +38,6 @@ export class UserRendelesComponent implements OnInit {
       (res) => {
           res.data.forEach((termek: any) => {
             alert("Termek neve: "+termek.termek_nev + "\nDarabszám: "+termek.darabszam + "\nEgység ár: " +termek.egyseg_ar + "\nÁlapot: "+ this.kezbesitve(termek.kezbesitve))
-            //console.log(res.data[0])
           }
         )
       }
@@ -63,8 +61,7 @@ export class UserRendelesComponent implements OnInit {
       return "Magyar Posta"
     }else{
       return "DPD"
-    }
-    
+    }    
   }
 
   getFizOp(num:any){
@@ -74,8 +71,7 @@ export class UserRendelesComponent implements OnInit {
       return "Utánvétel kezpenzel"
     } else{
       return "Utánvetel Kártyával"
-    }
-    
+    }    
   }
 
 }

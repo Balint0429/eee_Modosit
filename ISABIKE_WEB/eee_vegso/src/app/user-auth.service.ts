@@ -34,7 +34,6 @@ export class UserAuthService {
   register(felhasznalo_nev:string, kereszt_nev:string, vezetek_nev:string, email:string, password:string): void {
     this.authenticationClient.register(felhasznalo_nev, kereszt_nev, vezetek_nev, email, password).subscribe({
       next:(response:any)=> {
-        //localStorage.setItem(this.tokenKey, response.token);
         window.location.replace('/verify');
       },
       error: (error:any) => {
@@ -42,13 +41,6 @@ export class UserAuthService {
         alert("Hiba történ a regisztráció során.")
       }
     })
-    // let payload = {
-    //   felhasznalo_nev: data.userName,
-    //   kereszt_nev: data.firstName,
-    //   vezetek_nev: data.lastName,
-    //   email: data.email,
-    //   password: data.password,
-    // };
   }
 
   verifyAccount(data: VerifyPayload): Promise<any> {

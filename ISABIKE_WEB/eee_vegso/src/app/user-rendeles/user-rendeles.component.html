@@ -1,15 +1,20 @@
-<div class="container">
-    <div class="row">
-      <div *ngFor="let rendeles of rendelesData" class="col-md-4">
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">Rendelés ideje: {{ rendeles.rendeles_ideje }}</h5>
-            <p class="card-text">Megjegyzés: {{ rendeles.megjegyzes }}</p>
-            <p class="card-text">Szálitó: {{ this.getSzalito(rendeles.szalito_id) }}</p>
-            <p class="card-text">Fizetés opció: {{ this.getFizOp(rendeles.fizetes_opcio_id) }}</p>
-            <button class="btn btn-success" (click)="getRendelesTermekek(rendeles.rendeles_id)">Rendelés termékei</button>
+<div class="outer-container">
+  <div class="container">
+      <div class="row">
+        <div *ngFor="let rendeles of rendelesData" class="col-md-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Rendelés ideje: {{ rendeles.rendeles_ideje }}</h5>
+              <p class="card-text">Megjegyzés: {{ rendeles.megjegyzes }}</p>
+              <p class="card-text">Szálitó: {{ this.getSzalito(rendeles.szalito_id) }}</p>
+              <p class="card-text">Fizetés opció: {{ this.getFizOp(rendeles.fizetes_opcio_id) }}</p>
+              <button class="btn btn-warning" (click)="getRendelesTermekek(rendeles.rendeles_id)">Rendelés adatai</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+</div>
+<footer>
+  <p>&copy; 2024 ISABIKE Kerékpárüzlet. Minden jog fenntartva.</p>
+</footer>

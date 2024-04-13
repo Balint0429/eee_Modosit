@@ -10,7 +10,8 @@
   margin-right: 25px;
 }
 .navbar-nav .nav-item {
-  font-weight: bold; 
+  font-weight: bold;
+  padding: 10px; 
 }
 .navbar-nav .nav-item:hover {
   color: #fff;
