@@ -398,22 +398,22 @@ A komponens egy listát jelenít meg a felhasználó rendeléseiről, minden ren
 - **Leírás**: A felhasználó rendeléseinek lekérdezése.
 - **Feladatok**: Lekéri a felhasználó rendeléseit a megfelelő szolgáltatástól, majd megjeleníti azokat a felületen. Ha a lekérdezés sikertelen, visszairányítja a felhasználót a biciklik oldalra, és kiír egy figyelmeztetést.
 
-### `getRendelesTermekek(id: any)`
+### `getRendelesTermekek()`
 
 - **Leírás**: Egy rendeléshez tartozó termékek lekérdezése.
 - **Feladatok**: Lekéri az adott rendeléshez tartozó termékeket a megfelelő szolgáltatástól, majd megjeleníti azokat egy felugró üzenetben. Az üzenet tartalmazza a termék nevét, darabszámát, egységárát és állapotát.
 
-### `kezbesitve(num:any)`
+### `kezbesitve(y)`
 
 - **Leírás**: Állapot visszaadása szöveges formában.
 - **Feladatok**: Az adott szám alapján visszaadja a megfelelő állapot szöveges formában.
 
-### `getSzalito(num:any)`
+### `getSzalito()`
 
 - **Leírás**: Szállító nevének visszaadása szöveges formában.
 - **Feladatok**: Az adott szám alapján visszaadja a megfelelő szállító nevét szöveges formában.
 
-### `getFizOp(num:any)`
+### `getFizOp()`
 
 - **Leírás**: Fizetési opció nevének visszaadása szöveges formában.
 - **Feladatok**: Az adott szám alapján visszaadja a megfelelő fizetési opció nevét szöveges formában.
