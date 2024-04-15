@@ -239,3 +239,55 @@ Ezen részben a felhasználó beírhatja az e-mailben kapott 5 számjegyű meger
 
 - **Típus**: boolean
 - **Leírás**: Megadja, hogy a fiók megerősítése sikeres volt-e vagy sem.
+
+# Termék Részletek
+
+Ez a komponens felelős egy adott termék részleteinek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
+
+## Tartalom
+
+### Kép
+
+Az adott termék képe megjelenítésre kerül, ha rendelkezésre áll.
+
+### Termek Információk
+
+A termék alábbi információi kerülnek megjelenítésre:
+
+- **Termék neve**: Az adott termék neve.
+- **Kategória**: Az adott termék kategóriája.
+- **Gyártó**: Az adott termék gyártója.
+- **Mennyiség rakáron**: Az adott termék raktáron lévő mennyisége.
+- **Súly**: Az adott termék súlya és mértékegysége.
+- **Szín**: Az adott termék színe.
+- **Leírás**: Az adott termék leírása.
+- **Ár**: Az adott termék egységára.
+- **Elérhetőség**: Az adott termék elérhetősége, ami lehet "Elérhető" vagy "Nem Elérhető" attól függően, hogy van-e készleten.
+
+### Műveletek
+
+- **Másik termék megtekintése**: Visszatérés a terméklista oldalra.
+- **Hozzáadás a kosárhoz**: Ha a felhasználó be van jelentkezve, lehetőség van a termék hozzáadására a kosárhoz.
+
+## Metódusok
+
+### `ngOnInit()`
+
+- **Leírás**: Az Angular életciklusának része, a komponens inicializálásakor fut le.
+- **Feladatok**: Betölti a termék részleteit az URL-ben megadott azonosító alapján.
+
+### `goBack()`
+
+- **Leírás**: Visszatérés a terméklista oldalra.
+- **Feladatok**: Navigál a terméklista oldalra és törli az esetlegesen eltárolt termék azonosítót.
+
+### `addCart()`
+
+- **Leírás**: A termék hozzáadása a kosárhoz.
+- **Feladatok**: Elküldi a kosárba helyezendő termék azonosítóját a kosár szolgáltatásnak, majd kezeli az esetleges válaszüzeneteket.
+
+### `isLoggedIn()`
+
+- **Leírás**: Ellenőrzi, hogy a felhasználó be van-e jelentkezve.
+- **Feladatok**: Visszaadja a bejelentkezés állapotát.
+
