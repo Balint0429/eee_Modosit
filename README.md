@@ -291,3 +291,35 @@ A termék alábbi információi kerülnek megjelenítésre:
 - **Leírás**: Ellenőrzi, hogy a felhasználó be van-e jelentkezve.
 - **Feladatok**: Visszaadja a bejelentkezés állapotát.
 
+# Rendelés űrlap
+
+Ez a komponens felelős a vásárlók rendeléseinek rögzítéséért az ISABIKE Kerékpárüzlet webhelyén.
+
+## Űrlapmezők
+
+1. **Vásárló telefonszáma**: A vásárló telefonszámának megadása kötelező. Az érvényes telefonszám formátumának meg kell felelnie.
+2. **Szállítási cím**: A rendelés szállítási címének megadása kötelező.
+3. **Megjegyzés**: Opcionális mező, ahol a vásárló megjegyzéseket fűzhet a rendeléshez.
+4. **Szállító**: Az alapértelmezett szállító cég, amely a rendelést teljesíti. A felhasználó nem módosíthatja ezt a mezőt.
+5. **Fizetési opció**: Az alapértelmezett fizetési mód, amelyet a vásárló választott. A felhasználó nem módosíthatja ezt a mezőt.
+6. **Kedvezmény**: Az esetleges kedvezmények megjelenítése. A felhasználó nem módosíthatja ezt a mezőt.
+
+## Metódusok
+
+### `ngOnInit()`
+
+- **Leírás**: Az Angular életciklusának része, a komponens inicializálásakor fut le.
+- **Feladatok**: Létrehozza és validálja az űrlapot.
+
+### `onSubmit()`
+
+- **Leírás**: A rendelés űrlap elküldésekor hívódik meg.
+- **Feladatok**:
+  1. Ellenőrzi az űrlap validitását.
+  2. Elküldi a rendelés adatait a szervernek.
+  3. Megjelenít egy üzenetet a sikeres vagy sikertelen rendelésről.
+
+## Fontos megjegyzés
+
+- Ellenőrizd az összes kötelező mező kitöltését a rendelés elküldése előtt.
+- Kezeld a szerver által visszaadott hibákat a rendelés küldésekor.
