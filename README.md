@@ -49,7 +49,7 @@ A routing a `AppRoutingModule` modulban van definiálva. A különböző útvona
 2. Indítsuk el az alkalmazást a `ng serve` paranccsal.
 3. Navigáljunk a `http://localhost:4200/` címre a böngészőben.
 
-# Home Komponens
+# Home komponens
 
 A Home komponens felelős a kezdőoldal tartalmának megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -78,7 +78,7 @@ A Home komponens felelős a kezdőoldal tartalmának megjelenítéséért az ISA
 - **Feladat**: Elmenti a kiválasztott termék azonosítóját a localStorage-be, majd navigál a termék részletek oldalra.
 
 
-# Biciklik Komponens
+# Biciklik komponens
 
 A Biciklik komponens felelős a kerékpártermékek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -197,7 +197,7 @@ Ez a komponens felelős a felhasználó bejelentkezési felületének megjelení
   5. Lekéri a felhasználó adatait a localStorage-ból és elmenti őket.
 
 
-# Verify Comonent
+# Verify komponens
 
 Ez a komponens felelős a felhasználói fiók megerősítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -291,7 +291,7 @@ A termék alábbi információi kerülnek megjelenítésre:
 - **Leírás**: Ellenőrzi, hogy a felhasználó be van-e jelentkezve.
 - **Feladatok**: Visszaadja a bejelentkezés állapotát.
 
-# Rendeles Kommpones
+# Rendeles komponens
 
 Ez a komponens felelős a vásárlók rendeléseinek rögzítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
