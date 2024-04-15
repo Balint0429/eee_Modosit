@@ -14,8 +14,6 @@ Az ISABIKE Kerékpárüzlet alkalmazás egy webes platform, amely lehetővé tes
 ### Futási környezet:
 Az ISABIKE Kerékpárüzlet alkalmazás webes környezetben fut, így elérhető bármilyen modern webböngészőn keresztül, például Google Chrome, Mozilla Firefox, vagy Safari.
 
-### Telepítés:
-Az alkalmazás telepítése nem szükséges, csak el kell indítani a megfelelő webböngészőben.
 ### Használat:
 Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngészőben navigálva érik el az alábbi oldalakat:
 - **Főoldal:** Az ISABIKE főoldalára érkeznek, ahol általános információkat találnak a vállalkozásról.
