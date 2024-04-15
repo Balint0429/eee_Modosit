@@ -5,9 +5,6 @@ Ez a dokumentáció a Bikeapi nevű Angular alkalmazásról szól, amely egy ker
 
 ## Felhasználói Dokumentáció
 
-### Főoldal
-A főoldalon a felhasználók megtekinthetik a legújabb ajánlatokat és híreket.
-
 ### Célok
 A webalkalmazás célközönsége kerékpárok iránt érdeklődő felhasználók, akik szeretnék böngészni a kínálatot, részletes információkat szeretnének kapni a különböző modellekről, valamint vásárolni szeretnének a platformon keresztül.
 
@@ -19,10 +16,8 @@ Az ISABIKE Kerékpárüzlet alkalmazás webes környezetben fut, így elérhető
 
 ### Telepítés:
 Az alkalmazás telepítése nem szükséges, csak el kell indítani a megfelelő webböngészőben.
-
 ### Használat:
 Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngészőben navigálva érik el az alábbi funkciókat:
-
 #### Főoldal: 
 Az felhasználok az ISABIKE főoldalára érkeznek, ahol általános információkat találnak a vállalkozásról.
 #### Kerékpárok: 
