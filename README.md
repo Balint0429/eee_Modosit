@@ -150,3 +150,67 @@ A komponens egy regisztrációs űrlapot tartalmaz, amely lehetővé teszi a fel
 
 - **Leírás**: Ez a változó jelzi, hogy éppen folyamatban van-e az űrlap elküldése.
 - **Feladat**: Amikor az űrlap elküldése folyamatban van, ez a változó igaz értéket kap, és letiltja az űrlap újbóli elküldését.
+# Home komponens
+
+A Home komponens felelős a kezdőoldal tartalmának megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
+
+## Feladatok
+
+- Betölti a termékek adatait a backend szolgáltatásból.
+- Megjeleníti a kerékpár márkákat logók formájában.
+- Megjeleníti a kezdőoldalon a legnépszerűbb termékeket kártyák formájában.
+- Biztosítja a felhasználó számára, hogy a termékek részleteit megtekinthesse a "Részletek" gombra kattintva.
+
+## Metódusok
+
+### `ngOnInit()`
+
+- **Leírás**: Ez a metódus az Angular életciklusának része, és a komponens inicializálásakor fut le.
+- **Feladat**: Betölti a termékeket és a márkákat a backend szolgáltatásból.
+
+### `getProducts()`
+
+- **Leírás**: Ez a metódus lekéri a termékek adatait a backend szolgáltatásból.
+- **Feladat**: Frissíti a `products` tömböt a lekért termékekkel.
+
+### `showProductDetails(productId: number)`
+
+- **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó a termék részleteit kívánja megtekinteni.
+- **Feladat**: Elmenti a kiválasztott termék azonosítóját a localStorage-be, majd navigál a termék részletek oldalra.
+
+## Fontos figyelmeztetés
+
+- Győződj meg róla, hogy a termékek és márkák megfelelően vannak-e betöltve és megjelenítve a kezdőoldalon.
+- Ellenőrizd a "Részletek" gomb működését, és győződj meg róla, hogy a kattintás után megjelennek-e a kiválasztott termék részletei.
+# Bejelentkezés
+
+Ez a komponens felelős a felhasználó bejelentkezési felületének megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
+
+## Feladatok
+
+- Megjeleníti az e-mail cím és jelszó beviteli mezőket.
+- Biztosítja a bejelentkezés gomb funkcióját.
+- Amennyiben a felhasználó még nem rendelkezik fiókkal, lehetőséget biztosít a regisztrációra.
+
+## Metódusok
+
+### `ngOnInit()`
+
+- **Leírás**: Az Angular életciklusának része, a komponens inicializálásakor fut le.
+
+### `loginAction()`
+
+- **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó be akar jelentkezni.
+- **Feladatok**:
+  1. Ellenőrzi a beviteli mezők validitását.
+  2. Elküldi a bejelentkezési adatokat a backend szolgáltatásnak.
+  3. Amennyiben a bejelentkezés sikeres, átirányítja a felhasználót a kezdőoldalra.
+  4. Mentésre kerül a token a localStorage-be.
+  5. Lekéri a felhasználó adatait a localStorage-ból és elmenti őket.
+
+## Fontos megjegyzés
+
+- Ellenőrizd a beviteli mezők validitását a bejelentkezés előtt.
+- Győződj meg arról, hogy a bejelentkezés gomb megfelelően működik.
+- Biztosítsd, hogy a felhasználók regisztrálhassanak a megfelelő linken keresztül.
+
