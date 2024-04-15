@@ -369,7 +369,7 @@ Ez a komponens felelős a felhasználó bevásárlókosarában található term�
 
 A komponens egy listát jelenít meg a felhasználó bevásárlókosarában található termékekről. Minden termékhez tartozik a termék neve, mennyisége és hozzáadásának ideje. Minden termékhez egy gomb is tartozik, amely lehetővé teszi a termék törlését a kosárból.
 
-## Műveletek
+## Metódusok
 
 ### `getItems()`
 
@@ -396,7 +396,7 @@ Ez a komponens felelős a felhasználó rendeléseinek megjelenítéséért az I
 
 A komponens egy listát jelenít meg a felhasználó rendeléseiről, minden rendeléshez tartozik a rendelés ideje, megjegyzés, szállító és fizetési opció. Minden rendeléshez tartozik egy gomb is, amely lehetővé teszi a rendelés részletes adatainak megtekintését.
 
-## Műveletek
+## Metódusok
 
 ### `getItems()`
 
