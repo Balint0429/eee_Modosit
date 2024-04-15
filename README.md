@@ -9,19 +9,8 @@ Ez a dokumentáció a Bikeapi nevű Angular alkalmazásról szól, amely egy ker
 A főoldalon a felhasználók megtekinthetik a legújabb ajánlatokat és híreket.
 
 ### Kerékpárok
-A "Kerékpárok" oldalon találhatóak a különböző kerékpármodellek listája. A felhasználók megtekinthetik a kerékpárok képeit, leírását, árát és gyártóját. Részletes információkért kattintsunk a "Részletek" gombra.
-
-### Rólunk
-Az "Rólunk" oldalon találhatóak információk a vállalatról és a szolgáltatásokról.
-
-### Bejelentkezés és Regisztráció
-A felhasználók bejelentkezhetnek vagy regisztrálhatnak az oldalon. Bejelentkezett felhasználók számára elérhetővé válik a "Rendelésem" menüpont.
-
-### Kosár
-A "Kosár" oldalon a felhasználók megtekinthetik a kosárba helyezett termékeket és véglegesíthetik a rendelésüket.
-
-### Rendelésem
-A "Rendelésem" oldalon a felhasználók megtekinthetik korábbi rendeléseiket.
+Mit csinál a program, ki a célközönség
+Az ISABIKE Kerékpárüzlet webalkalmazás lehetővé teszi a felhasználók számára kerékpárok böngészését, rendelését és a rendelések kezelését. A program célközönsége a kerékpárok iránt érdeklődő vásárlók.
 
 ## Fejlesztői Dokumentáció
 
