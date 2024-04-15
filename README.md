@@ -82,11 +82,6 @@ A Biciklik komponens felelős a kerékpártermékek megjelenítéséért az ISAB
 - **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó részleteket kér egy termékről.
 - **Feladat**: Elmenti a termék azonosítóját a localStorage-ben, majd navigál a részletek oldalra.
 
-## Fontos figyelmeztetés
-
-- Győződj meg róla, hogy a kapott adatok megfelelően vannak-e kezelve és megjelenítve a komponensben.
-- Ellenőrizd a lapozás működését, és győződj meg róla, hogy a lapozás gombok megfelelően működnek-e az összes termék megjelenítéséhez.
-
 # Regisztráció komponens
 
 A regisztráció komponens lehetővé teszi a felhasználók számára, hogy regisztráljanak az ISABIKE Kerékpárüzlet webhelyére.
@@ -150,6 +145,7 @@ A komponens egy regisztrációs űrlapot tartalmaz, amely lehetővé teszi a fel
 
 - **Leírás**: Ez a változó jelzi, hogy éppen folyamatban van-e az űrlap elküldése.
 - **Feladat**: Amikor az űrlap elküldése folyamatban van, ez a változó igaz értéket kap, és letiltja az űrlap újbóli elküldését.
+
 # Home komponens
 
 A Home komponens felelős a kezdőoldal tartalmának megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
@@ -208,9 +204,4 @@ Ez a komponens felelős a felhasználó bejelentkezési felületének megjelení
   4. Mentésre kerül a token a localStorage-be.
   5. Lekéri a felhasználó adatait a localStorage-ból és elmenti őket.
 
-## Fontos megjegyzés
-
-- Ellenőrizd a beviteli mezők validitását a bejelentkezés előtt.
-- Győződj meg arról, hogy a bejelentkezés gomb megfelelően működik.
-- Biztosítsd, hogy a felhasználók regisztrálhassanak a megfelelő linken keresztül.
 
