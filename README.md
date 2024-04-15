@@ -291,7 +291,7 @@ A termék alábbi információi kerülnek megjelenítésre:
 - **Leírás**: Ellenőrzi, hogy a felhasználó be van-e jelentkezve.
 - **Feladatok**: Visszaadja a bejelentkezés állapotát.
 
-# Rendelés űrlap
+# Rendeles Kommpones
 
 Ez a komponens felelős a vásárlók rendeléseinek rögzítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
