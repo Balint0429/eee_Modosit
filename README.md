@@ -19,10 +19,10 @@ Az alkalmazás telepítése nem szükséges, csak el kell indítani a megfelelő
 ### Használat:
 Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngészőben navigálva érik el az alábbi oldalakat:
 - **Főoldal:** Az ISABIKE főoldalára érkeznek, ahol általános információkat találnak a vállalkozásról.
-- **Biciklik:** A termékkínálatot megtekinthetik, termékeket böngészhetnek, részletes információkat kaphatnak a különböző modellekről.
-- **Szerviz:** Ha szükséges, szervizszolgáltatásokl kapcsolatban informálodhatnak.
+- **Biciklik:** Megtekinthetik a termékkínálatot, részletes információkat kaphatnak a különböző modellekről.
+- **Szerviz:** A kinált szervizszolgáltatásokl kapcsolatban informálodhatnak.
 - **Rólunk:** További információkat találnak a vállalkozásról és annak történetéről.
-- **Kosár:** A kiválasztott termékeket itt tárolhatják vásárlás előtt.
+- **Kosár:** A kiválasztott termékeket itt tárolodik vásárlás előtt.
 - **Bejelentkezés:** Felhasználói fiók létrehozása e-mail cím és jelszó megadásával.
 - **Regisztráció:** Felhasználói fiók létrehozása a megfelelő adatokkal.
 - **Rendelések:** Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát.
