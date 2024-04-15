@@ -201,28 +201,6 @@ Ez a komponens felelős a felhasználó bejelentkezési felületének megjelení
   4. Mentésre kerül a token a localStorage-be.
   5. Lekéri a felhasználó adatait a localStorage-ból és elmenti őket.
 
-# Register Kommponens
-
-Ez a komponens felelős a felhasználó regisztrációs felületének megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
-
-## Feladatok
-
-- Megjeleníti a név, keresztnév, vezetéknév, e-mail cím és jelszó beviteli mezőket.
-- Biztosítja a regisztráció gomb funkcióját.
-- Amennyiben a felhasználó már rendelkezik fiókkal, lehetőséget biztosít a bejelentkezésre.
-
-## Metódusok
-
-### `ngOnInit()`
-
-- **Leírás**: Az Angular életciklusának része, a komponens inicializálásakor fut le.
-
-### `registerAction()`
-
-- **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó regisztrálni kíván.
-- **Feladatok**:
-  1. Ellenőrzi a regisztrációs űrlap validitását.
-  2. Elküldi a regisztrációs adatokat a backend szolgáltatásnak.
 
 # Verify Comonent
 
