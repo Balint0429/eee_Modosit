@@ -1,8 +1,5 @@
 # Bikeapi Dokumentáció
 
-## Áttekintés
-Ez a dokumentáció a Bikeapi nevű Angular alkalmazásról szól, amely egy kerékpárkereskedés webes felületét biztosítja. Az alkalmazás lehetővé teszi a felhasználók számára, hogy böngésszenek és vásároljanak kerékpárokat, valamint szervizidőpontot foglaljanak.
-
 ## Felhasználói Dokumentáció
 
 ### Célok
