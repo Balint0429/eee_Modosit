@@ -9,8 +9,27 @@ Ez a dokumentáció a Bikeapi nevű Angular alkalmazásról szól, amely egy ker
 A főoldalon a felhasználók megtekinthetik a legújabb ajánlatokat és híreket.
 
 ### Célok
-Mit csinál a program, ki a célközönség
-Az ISABIKE Kerékpárüzlet webalkalmazás lehetővé teszi a felhasználók számára kerékpárok böngészését, rendelését és a rendelések kezelését. A program célközönsége a kerékpárok iránt érdeklődő vásárlók.
+A webalkalmazás célközönsége kerékpárok iránt érdeklődő felhasználók, akik szeretnék böngészni a kínálatot, részletes információkat szeretnének kapni a különböző modellekről, valamint vásárolni szeretnének a platformon keresztül.
+
+### Program leírása:
+Az ISABIKE Kerékpárüzlet alkalmazás egy webes platform, amely lehetővé teszi kerékpárok böngészését, részletes termékinformációk megtekintését és vásárlását. Az alkalmazás célja kényelmes és intuitív felhasználói élmény biztosítása a kerékpárok iránt érdeklődő vásárlók számára.
+
+### Futási környezet:
+Az ISABIKE Kerékpárüzlet alkalmazás webes környezetben fut, így elérhető bármilyen modern webböngészőn keresztül, például Google Chrome, Mozilla Firefox, vagy Safari.
+
+### Telepítés:
+Az alkalmazás telepítése nem szükséges, csak el kell indítani a megfelelő webböngészőben.
+
+### Használat:
+Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngészőben navigálva érik el az alábbi funkciókat:
+
+#### Főoldal: Az ISABIKE főoldalára érkeznek, ahol általános információkat találnak a vállalkozásról.
+Kerékpárok: A termékkínálatot megtekinthetik, termékeket böngészhetnek, részletes információkat kaphatnak a különböző modellekről.
+Szerviz: Ha szükséges, szervizszolgáltatásokat is igénybe vehetnek.
+Rólunk: További információkat találnak a vállalkozásról és annak történetéről.
+Kosár: A kiválasztott termékeket itt tárolhatják vásárlás előtt.
+Bejelentkezés/Regisztráció: Felhasználói fiók létrehozása vagy bejelentkezés az alkalmazásba.
+Rendelések: Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát
 
 ## Fejlesztői Dokumentáció
 
