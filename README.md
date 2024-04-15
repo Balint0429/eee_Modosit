@@ -49,6 +49,35 @@ A routing a `AppRoutingModule` modulban van definiálva. A különböző útvona
 2. Indítsuk el az alkalmazást a `ng serve` paranccsal.
 3. Navigáljunk a `http://localhost:4200/` címre a böngészőben.
 
+# Home Komponens
+
+A Home komponens felelős a kezdőoldal tartalmának megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
+
+## Feladatok
+
+- Betölti a termékek adatait a backend szolgáltatásból.
+- Megjeleníti a kerékpár márkákat logók formájában.
+- Megjeleníti a kezdőoldalon a legnépszerűbb termékeket kártyák formájában.
+- Biztosítja a felhasználó számára, hogy a termékek részleteit megtekinthesse a "Részletek" gombra kattintva.
+
+## Metódusok
+
+### `ngOnInit()`
+
+- **Leírás**: Ez a metódus az Angular életciklusának része, és a komponens inicializálásakor fut le.
+- **Feladat**: Betölti a termékeket és a márkákat a backend szolgáltatásból.
+
+### `getProducts()`
+
+- **Leírás**: Ez a metódus lekéri a termékek adatait a backend szolgáltatásból.
+- **Feladat**: Frissíti a `products` tömböt a lekért termékekkel.
+
+### `showProductDetails(productId: number)`
+
+- **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó a termék részleteit kívánja megtekinteni.
+- **Feladat**: Elmenti a kiválasztott termék azonosítóját a localStorage-be, majd navigál a termék részletek oldalra.
+
+
 # Biciklik Komponens
 
 A Biciklik komponens felelős a kerékpártermékek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
@@ -146,38 +175,6 @@ A komponens egy regisztrációs űrlapot tartalmaz, amely lehetővé teszi a fel
 - **Leírás**: Ez a változó jelzi, hogy éppen folyamatban van-e az űrlap elküldése.
 - **Feladat**: Amikor az űrlap elküldése folyamatban van, ez a változó igaz értéket kap, és letiltja az űrlap újbóli elküldését.
 
-# Home Komponens
-
-A Home komponens felelős a kezdőoldal tartalmának megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
-
-## Feladatok
-
-- Betölti a termékek adatait a backend szolgáltatásból.
-- Megjeleníti a kerékpár márkákat logók formájában.
-- Megjeleníti a kezdőoldalon a legnépszerűbb termékeket kártyák formájában.
-- Biztosítja a felhasználó számára, hogy a termékek részleteit megtekinthesse a "Részletek" gombra kattintva.
-
-## Metódusok
-
-### `ngOnInit()`
-
-- **Leírás**: Ez a metódus az Angular életciklusának része, és a komponens inicializálásakor fut le.
-- **Feladat**: Betölti a termékeket és a márkákat a backend szolgáltatásból.
-
-### `getProducts()`
-
-- **Leírás**: Ez a metódus lekéri a termékek adatait a backend szolgáltatásból.
-- **Feladat**: Frissíti a `products` tömböt a lekért termékekkel.
-
-### `showProductDetails(productId: number)`
-
-- **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó a termék részleteit kívánja megtekinteni.
-- **Feladat**: Elmenti a kiválasztott termék azonosítóját a localStorage-be, majd navigál a termék részletek oldalra.
-
-## Fontos figyelmeztetés
-
-- Győződj meg róla, hogy a termékek és márkák megfelelően vannak-e betöltve és megjelenítve a kezdőoldalon.
-- Ellenőrizd a "Részletek" gomb működését, és győződj meg róla, hogy a kattintás után megjelennek-e a kiválasztott termék részletei.
 # Bejelentkezés
 
 Ez a komponens felelős a felhasználó bejelentkezési felületének megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
