@@ -291,6 +291,34 @@ A termék alábbi információi kerülnek megjelenítésre:
 - **Leírás**: Ellenőrzi, hogy a felhasználó be van-e jelentkezve.
 - **Feladatok**: Visszaadja a bejelentkezés állapotát.
 
+# Rolunk komponens
+
+Ez a komponens az ISABIKE kerékpárüzlet bemutatására szolgál. Az oldal három fő részre van osztva: az üdvözlő szakaszra, a történetre és az elérhetőségre.
+
+## Tartalom
+
+### Bevezető szakasz 
+Ez a rész üdvözli a látogatókat az ISABIKE-ban. Tartalmazza az üzlet nevét, egy rövid üzenetet a minőségi kerékpárokról és kiegészítőkről, valamint egy képet a kerékpárüzletről.
+
+### Történet 
+Itt található a kerékpárüzlet bemutatása és az ISABIKE-hoz való csatlakozás értékrendje. Részletesen ismerteti, hogy az ISABIKE nem csupán egy kerékpárüzlet, hanem egy közösség, ahol a kerékpározás iránti szenvedély megosztható és átélhető.
+
+### Elérhetőség 
+Ebben a szakaszban megtalálhatók az ISABIKE elérhetőségi adatai, mint például a telefonszám, az email cím és a cím. Ezek segítségével a látogatók könnyen kapcsolatba léphetnek az üzlettel.
+
+# Szerviz komponens
+
+Ez az oldal a szerviz kínálatokat mutatja be az ISABIKE kerékpárüzletben. A felsorolt szolgáltatásokat és azok árait tartalmazza.
+
+### Állapotfelmérés
+### Olaj- és szűrőcsere
+### Láncszett csere
+### Fékszerviz
+Fontos a biztonságos közlekedés érdekében. Ez a szolgáltatás magában foglalja a fékalkatrészek ellenőrzését és szükség esetén cseréjét. A munkadíj: 12 000 Ft-tól.
+### Teleszkópszerviz 
+A kényelmes használat érdekében elengedhetetlen a tökéletes állapotú futómű. A munkadíj: 40 000 Ft-tól.
+### Gumiabroncs csere
+
 # Rendeles komponens
 
 Ez a komponens felelős a vásárlók rendeléseinek rögzítéséért az ISABIKE Kerékpárüzlet webhelyén.
@@ -323,21 +351,6 @@ Ez a komponens felelős a vásárlók rendeléseinek rögzítéséért az ISABIK
 
 - Ellenőrizd az összes kötelező mező kitöltését a rendelés elküldése előtt.
 - Kezeld a szerver által visszaadott hibákat a rendelés küldésekor.
-  
-# Rolunk komponens
-
-Ez a komponens az ISABIKE kerékpárüzlet bemutatására szolgál. Az oldal három fő részre van osztva: az üdvözlő szakaszra, a történetre és az elérhetőségre.
-
-## Tartalom
-
-### Bevezető szakasz 
-Ez a rész üdvözli a látogatókat az ISABIKE-ban. Tartalmazza az üzlet nevét, egy rövid üzenetet a minőségi kerékpárokról és kiegészítőkről, valamint egy képet a kerékpárüzletről.
-
-### Történet 
-Itt található a kerékpárüzlet bemutatása és az ISABIKE-hoz való csatlakozás értékrendje. Részletesen ismerteti, hogy az ISABIKE nem csupán egy kerékpárüzlet, hanem egy közösség, ahol a kerékpározás iránti szenvedély megosztható és átélhető.
-
-### Elérhetőség 
-Ebben a szakaszban megtalálhatók az ISABIKE elérhetőségi adatai, mint például a telefonszám, az email cím és a cím. Ezek segítségével a látogatók könnyen kapcsolatba léphetnek az üzlettel.
 
 # Kosár komponens
 
