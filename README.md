@@ -49,8 +49,43 @@ A routing a `AppRoutingModule` modulban van definiálva. A különböző útvona
 2. Indítsuk el az alkalmazást a `ng serve` paranccsal.
 3. Navigáljunk a `http://localhost:4200/` címre a böngészőben.
 
-## További Segítség
-További segítségért és információkért tekintsük meg az [Angular CLI Overview and Command Reference](https://angular.io/cli) oldalt.
+# Biciklik komponens
+
+A Biciklik komponens felelős a kerékpártermékek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
+
+## Feladatok
+
+- Betölti a kerékpártermékeket a backend szolgáltatásból.
+- Megjeleníti a kerékpártermékeket kártya formájában, amelyek tartalmazzák a termék nevét, gyártóját, leírását, árát és egy részletek gombot.
+- Lehetővé teszi a felhasználó számára, hogy részleteket lásson a kiválasztott termékről.
+- Biztosítja a lapozást, hogy a felhasználó könnyen navigálhasson az oldalak között.
+
+## Metódusok
+
+### `ngOnInit()`
+
+- **Leírás**: Ez a metódus az Angular életciklusának része, és a komponens inicializálásakor fut le.
+- **Feladat**: Betölti a kerékpártermékeket és beállítja az oldalak számát a lapozáshoz.
+
+### `getProducts()`
+
+- **Leírás**: Ez a metódus lekéri a kerékpártermékeket a backend szolgáltatásból.
+- **Feladat**: Frissíti a `products` tömböt a lekért termékekkel, valamint beállítja az összes termék számát a lapozáshoz.
+
+### `onPageChange(pageNumber: number)`
+
+- **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó vált az oldalak között.
+- **Feladat**: Beállítja az aktuális oldalszámot a kapott oldalszámra.
+
+### `showProductDetails(productId: number)`
+
+- **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó részleteket kér egy termékről.
+- **Feladat**: Elmenti a termék azonosítóját a localStorage-ben, majd navigál a részletek oldalra.
+
+## Fontos figyelmeztetés
+
+- Győződj meg róla, hogy a kapott adatok megfelelően vannak-e kezelve és megjelenítve a komponensben.
+- Ellenőrizd a lapozás működését, és győződj meg róla, hogy a lapozás gombok megfelelően működnek-e az összes termék megjelenítéséhez.
 
 # Regisztráció komponens
 
