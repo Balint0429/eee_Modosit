@@ -240,7 +240,7 @@ Ezen részben a felhasználó beírhatja az e-mailben kapott 5 számjegyű meger
 - **Típus**: boolean
 - **Leírás**: Megadja, hogy a fiók megerősítése sikeres volt-e vagy sem.
 
-# Termék Részletek
+# Termék Részletek komponens
 
 Ez a komponens felelős egy adott termék részleteinek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -324,7 +324,7 @@ Ez a komponens felelős a vásárlók rendeléseinek rögzítéséért az ISABIK
 - Ellenőrizd az összes kötelező mező kitöltését a rendelés elküldése előtt.
 - Kezeld a szerver által visszaadott hibákat a rendelés küldésekor.
 
-# User-Rendeles komponens
+# Kosár komponens
 
 Ez a komponens felelős a felhasználó bevásárlókosarában található termékek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -350,4 +350,51 @@ A komponens egy listát jelenít meg a felhasználó bevásárlókosarában tal�
 
 - **Típus**: any[]
 - **Leírás**: A felhasználó bevásárlókosarában található termékek tömbje.
+
+# Felhasznalo-Rendeles komponens
+
+Ez a komponens felelős a felhasználó rendeléseinek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
+
+## Tartalom
+
+A komponens egy listát jelenít meg a felhasználó rendeléseiről, minden rendeléshez tartozik a rendelés ideje, megjegyzés, szállító és fizetési opció. Minden rendeléshez tartozik egy gomb is, amely lehetővé teszi a rendelés részletes adatainak megtekintését.
+
+## Műveletek
+
+### `getItems()`
+
+- **Leírás**: A felhasználó rendeléseinek lekérdezése.
+- **Feladatok**: Lekéri a felhasználó rendeléseit a megfelelő szolgáltatástól, majd megjeleníti azokat a felületen. Ha a lekérdezés sikertelen, visszairányítja a felhasználót a biciklik oldalra, és kiír egy figyelmeztetést.
+
+### `getRendelesTermekek(id: any)`
+
+- **Leírás**: Egy rendeléshez tartozó termékek lekérdezése.
+- **Feladatok**: Lekéri az adott rendeléshez tartozó termékeket a megfelelő szolgáltatástól, majd megjeleníti azokat egy felugró üzenetben. Az üzenet tartalmazza a termék nevét, darabszámát, egységárát és állapotát.
+
+### `kezbesitve(num:any)`
+
+- **Leírás**: Állapot visszaadása szöveges formában.
+- **Feladatok**: Az adott szám alapján visszaadja a megfelelő állapot szöveges formában.
+
+### `getSzalito(num:any)`
+
+- **Leírás**: Szállító nevének visszaadása szöveges formában.
+- **Feladatok**: Az adott szám alapján visszaadja a megfelelő szállító nevét szöveges formában.
+
+### `getFizOp(num:any)`
+
+- **Leírás**: Fizetési opció nevének visszaadása szöveges formában.
+- **Feladatok**: Az adott szám alapján visszaadja a megfelelő fizetési opció nevét szöveges formában.
+
+## Változók
+
+### `rendelesData`
+
+- **Típus**: any[]
+- **Leírás**: A felhasználó rendeléseinek tömbje.
+
+### `rendelesTermekek`
+
+- **Típus**: any[]
+- **Leírás**: A kiválasztott rendeléshez tartozó termékek tömbje.
 
