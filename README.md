@@ -20,10 +20,12 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
 - **Biciklik:** Megtekinthetik a termékkínálatot, részletes információkat kaphatnak a különböző modellekről.
 - **Szerviz:** A kinált szervizszolgáltatásokl kapcsolatban informálodhatnak.
 - **Rólunk:** További információkat találnak a vállalkozásról és annak történetéről.
-- **Kosár:** A kiválasztott termékeket itt tárolodik vásárlás előtt.
 - **Bejelentkezés:** Felhasználói fiók létrehozása e-mail cím és jelszó megadásával.
 - **Regisztráció:** Felhasználói fiók létrehozása a megfelelő adatokkal.
-- **Rendelések:** Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát.
+- **Viszaigazolás:** Felhasználói fiók aktiválása az e-mailben kapot kódal.
+- **Kosár:** A kiválasztott termékeket itt tárolodik vásárlás előtt.
+- **Rendelés:** Felhasználók megadják az adataikat és leadják a rendelés amiről e-mail értesitést kapnak.
+- **Felhasználó-Rendelések:** Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát.
 
 
 
@@ -32,8 +34,10 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
 ### Komponensek
 - `HomeComponent`: A főoldal komponense.
 - `BiciklikComponent`: A kerékpárok listáját megjelenítő komponens.
+- `SzervizComponent`: A kerékpárok listáját megjelenítő komponens.
 - `TermekComponent`: Egy adott termék részletes nézetét megjelenítő komponens.
 - `RolunkComponent`: Az "Rólunk" oldal komponense.
+- `KosárComponent`: Az "Rólunk" oldal komponense.
 - `LoginComponent`: Bejelentkezésért és regisztrációért felelős komponens.
 
 ### Szolgáltatások
@@ -44,7 +48,7 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
 ### Routing
 A routing a `AppRoutingModule` modulban van definiálva. A különböző útvonalak a megfelelő komponenseket rendelik hozzájuk.
 
-### Könyvtárak és Modulok
+### Modulok
 - `NgxPaginationModule`: A lapozást megvalósító modul.
 - `NgbModule`: A Bootstrap komponensek integrálására szolgáló modul.
 
