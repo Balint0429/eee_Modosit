@@ -49,7 +49,7 @@ A routing a `AppRoutingModule` modulban van definiálva. A különböző útvona
 2. Indítsuk el az alkalmazást a `ng serve` paranccsal.
 3. Navigáljunk a `http://localhost:4200/` címre a böngészőben.
 
-# Biciklik komponens
+# Biciklik Komponens
 
 A Biciklik komponens felelős a kerékpártermékek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -146,7 +146,7 @@ A komponens egy regisztrációs űrlapot tartalmaz, amely lehetővé teszi a fel
 - **Leírás**: Ez a változó jelzi, hogy éppen folyamatban van-e az űrlap elküldése.
 - **Feladat**: Amikor az űrlap elküldése folyamatban van, ez a változó igaz értéket kap, és letiltja az űrlap újbóli elküldését.
 
-# Home komponens
+# Home Komponens
 
 A Home komponens felelős a kezdőoldal tartalmának megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -204,7 +204,7 @@ Ez a komponens felelős a felhasználó bejelentkezési felületének megjelení
   4. Mentésre kerül a token a localStorage-be.
   5. Lekéri a felhasználó adatait a localStorage-ból és elmenti őket.
 
-# Regisztráció
+# Register Kommponens
 
 Ez a komponens felelős a felhasználó regisztrációs felületének megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -227,3 +227,45 @@ Ez a komponens felelős a felhasználó regisztrációs felületének megjelení
   1. Ellenőrzi a regisztrációs űrlap validitását.
   2. Elküldi a regisztrációs adatokat a backend szolgáltatásnak.
 
+# Verify Comonent
+
+Ez a komponens felelős a felhasználói fiók megerősítéséért az ISABIKE Kerékpárüzlet webhelyén.
+
+## Tartalom
+
+### Sikeres Megerősítés
+
+Ha a fiók megerősítése sikeres volt, megjelenik egy üzenet, amely megerősíti a sikert, és lehetővé teszi a továbblépést.
+
+### Megerősítő Kód Bevitel
+
+Ezen részben a felhasználó beírhatja az e-mailben kapott 5 számjegyű megerősítő kódot.
+
+## Műveletek
+
+### `verifyAccount()`
+
+- **Leírás**: A fiók megerősítése.
+- **Feladatok**: Elküldi a beírt megerősítő kódot a megfelelő szolgáltatásnak. Ha a megerősítés sikeres volt, átirányítja a felhasználót a bejelentkező oldalra.
+
+## Változók
+
+### `code`
+
+- **Típus**: string
+- **Leírás**: A felhasználó által beírt megerősítő kód.
+
+### `isSubmitting`
+
+- **Típus**: boolean
+- **Leírás**: Megadja, hogy éppen folyamatban van-e a megerősítés folyamata.
+
+### `validationErrors`
+
+- **Típus**: any
+- **Leírás**: Az esetleges validációs hibák tárolására szolgáló változó.
+
+### `verificationSuccess`
+
+- **Típus**: boolean
+- **Leírás**: Megadja, hogy a fiók megerősítése sikeres volt-e vagy sem.
