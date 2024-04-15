@@ -323,6 +323,21 @@ Ez a komponens felelős a vásárlók rendeléseinek rögzítéséért az ISABIK
 
 - Ellenőrizd az összes kötelező mező kitöltését a rendelés elküldése előtt.
 - Kezeld a szerver által visszaadott hibákat a rendelés küldésekor.
+  
+# Rolunk komponens
+
+Ez a komponens az ISABIKE kerékpárüzlet bemutatására szolgál. Az oldal három fő részre van osztva: az üdvözlő szakaszra, a történetre és az elérhetőségre.
+
+## Tartalom
+
+### Bevezető szakasz 
+Ez a rész üdvözli a látogatókat az ISABIKE-ban. Tartalmazza az üzlet nevét, egy rövid üzenetet a minőségi kerékpárokról és kiegészítőkről, valamint egy képet a kerékpárüzletről.
+
+### Történet 
+Itt található a kerékpárüzlet bemutatása és az ISABIKE-hoz való csatlakozás értékrendje. Részletesen ismerteti, hogy az ISABIKE nem csupán egy kerékpárüzlet, hanem egy közösség, ahol a kerékpározás iránti szenvedély megosztható és átélhető.
+
+### Elérhetőség 
+Ebben a szakaszban megtalálhatók az ISABIKE elérhetőségi adatai, mint például a telefonszám, az email cím és a cím. Ezek segítségével a látogatók könnyen kapcsolatba léphetnek az üzlettel.
 
 # Kosár komponens
 
