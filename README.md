@@ -1,41 +1,42 @@
-ISABIKE Kerékpárüzlet Dokumentáció
-Tartalomjegyzék
-Áttekintés
-Felhasználói Dokumentáció
-Regisztráció és Bejelentkezés
-Termékek Böngészése
-Kosárkezelés
-Rendelések Megtekintése
-Fejlesztői Dokumentáció
-Komponensek
-Szolgáltatások
-Routing és Navigáció
-HTTP Interceptor
-1. Áttekintés
-Az ISABIKE Kerékpárüzlet egy webalkalmazás, amely lehetővé teszi a felhasználók számára, hogy kerékpárokat böngésszenek, vásároljanak, és szervizidőpontot foglaljanak. Az alkalmazás lehetőséget nyújt a felhasználóknak a regisztrációra, bejelentkezésre és a vásárlásra.
+# Regisztráció komponens
 
-2. Felhasználói Dokumentáció
-Regisztráció és Bejelentkezés
-Az alkalmazásba való belépéshez regisztrációra van szükség. A regisztrációhoz kattintson a "Regisztráció" gombra a navigációs sávban, majd kövesse az utasításokat. Ha már regisztrált, jelentkezzen be az "Bejelentkezés" gombra kattintva.
+A regisztráció komponens lehetővé teszi a felhasználók számára, hogy regisztráljanak az ISABIKE Kerékpárüzlet webhelyére.
 
-Termékek Böngészése
-A "Kerékpárok" menüpont alatt böngészheti és megvásárolhatja a rendelkezésre álló kerékpárokat. Kattintson a kívánt termékre a részletes információk megtekintéséhez.
+## Felhasználás
 
-Kosárkezelés
-A "Kosár" menüpont segítségével ellenőrizheti a kosárban lévő termékeket és folytathatja a fizetési folyamatot.
+A komponens egy regisztrációs űrlapot tartalmaz, amely lehetővé teszi a felhasználók számára, hogy megadják a regisztrációhoz szükséges adatokat.
 
-Rendelések Megtekintése
-A "Rendelésem" menüpont alatt megtekintheti a korábban leadott rendeléseket és azok állapotát.
+## Alkalmazás
 
-3. Fejlesztői Dokumentáció
-Komponensek
-Az alkalmazás különböző komponensekből áll, amelyek között szerepelnek a főoldal, a termékek listája, a termék részletei, a regisztrációs és bejelentkezési felületek, valamint a kosár és a rendelések kezelése.
+1. **Felhasználónév**: A felhasználó teljes nevét kell megadnia.
+2. **Keresztnév**: A felhasználó keresztnevét kell megadnia.
+3. **Vezetéknév**: A felhasználó vezetéknevét kell megadnia.
+4. **E-mail cím**: A felhasználó érvényes e-mail címét kell megadnia.
+5. **Jelszó**: A felhasználó biztonságos jelszavát kell megadnia.
 
-Szolgáltatások
-Az alkalmazás különböző szolgáltatásokat használ, például a termék- és felhasználószolgáltatásokat a backend-kommunikációhoz, valamint a lapozási és navigációs szolgáltatásokat.
+## Folyamat
 
-Routing és Navigáció
-A navigáció az Angular Router segítségével történik, amely biztosítja az egyes oldalak közötti váltást és a dinamikus URL-kezelést.
+1. A felhasználó kitölti az összes szükséges mezőt az űrlapon.
+2. A felhasználó elküldi az űrlapot a "Regisztráció" gombra kattintva.
+3. Az alkalmazás ellenőrzi az adatok helyességét és regisztrálja a felhasználót.
 
-HTTP Interceptor
-Az alkalmazás HTTP Interceptor segítségével kezeli a HTTP kéréseket, például a hitelesítést és az autorizációt.
+## Jellemzők
+
+- A komponens használja a Reactive Forms modellt a form validációjához.
+- Az űrlap ellenőrzi a megadott adatok formátumát és érvényességét.
+- Ha sikeres a regisztráció, a felhasználó további tevékenységeket végezhet az alkalmazáson belül.
+
+## Figyelmeztetések
+
+- A jelszónak legalább 6 karakter hosszúnak kell lennie.
+- A felhasználónak érvényes e-mail címet kell megadnia.
+- A felhasználónak kitöltendő minden kötelező mezőt.
+
+## Megjegyzések
+
+- Ha bármely mezőt helytelenül töltik ki, hibaüzenet jelenik meg a felhasználónak.
+- Az űrlap elküldése előtt győződj meg róla, hogy minden mezőt helyesen töltöttél ki.
+
+---
+
+Footer: &copy; 2024 ISABIKE Kerékpárüzlet. Minden jog fenntartva.
