@@ -23,13 +23,27 @@ Az alkalmazás telepítése nem szükséges, csak el kell indítani a megfelelő
 ### Használat:
 Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngészőben navigálva érik el az alábbi funkciókat:
 
-#### Főoldal: Az ISABIKE főoldalára érkeznek, ahol általános információkat találnak a vállalkozásról.
-Kerékpárok: A termékkínálatot megtekinthetik, termékeket böngészhetnek, részletes információkat kaphatnak a különböző modellekről.
-Szerviz: Ha szükséges, szervizszolgáltatásokat is igénybe vehetnek.
-Rólunk: További információkat találnak a vállalkozásról és annak történetéről.
-Kosár: A kiválasztott termékeket itt tárolhatják vásárlás előtt.
-Bejelentkezés/Regisztráció: Felhasználói fiók létrehozása vagy bejelentkezés az alkalmazásba.
-Rendelések: Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát
+#### Főoldal: 
+Az felhasználok az ISABIKE főoldalára érkeznek, ahol általános információkat találnak a vállalkozásról.
+#### Kerékpárok: 
+A termékkínálatot megtekinthetik, termékeket böngészhetnek, részletes információkat kaphatnak a különböző modellekről.
+#### Szerviz: 
+Ha szükséges, szervizszolgáltatásokal kapcsolatban érdeklődhetnek.
+#### Rólunk: 
+További információkat találnak a vállalkozásról és annak történetéről.
+#### Bejelentkezés
+Felhasználói fiók létrehozása e-mail cím és jelszó megadásával.
+#### Regisztráció: 
+Felhasználói fiók létrehozása a megfelelő adatokal.
+#### Viszaigazólás: 
+Felhasználói aktiválása e-mailben kapot kódal.
+#### Kosár: 
+A kiválasztott termékeket itt tárolhatják vásárlás előtt.
+#### Rendelések 
+Itt megtudják rendelni a kosár tartalmát 
+#### Felhasználó-Rendelések: 
+Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát
+
 
 ## Fejlesztői Dokumentáció
 
