@@ -26,7 +26,7 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
 
 
 
-# **Fejlesztői Dokumentáció**
+# Fejlesztői Dokumentáció
 
 # Home komponens
 
