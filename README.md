@@ -77,7 +77,7 @@ A Home komponens felelős a kezdőoldal tartalmának megjelenítéséért az ISA
 - **Leírás**: Ez a metódus lekéri a termékek adatait a backend szolgáltatásból.
 - **Feladat**: Frissíti a `products` tömböt a lekért termékekkel.
 
-### `showProductDetails()`
+### `showProductDetails(productId: number)`
 
 - **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó a termék részleteit kívánja megtekinteni.
 - **Feladat**: Elmenti a kiválasztott termék azonosítóját a localStorage-be, majd navigál a termék részletek oldalra.
