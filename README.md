@@ -28,32 +28,6 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
 
 ## Fejlesztői Dokumentáció
 
-### Komponensek
-- `HomeComponent`: A főoldal komponense.
-- `BiciklikComponent`: A kerékpárok listáját megjelenítő komponens.
-- `SzervizComponent`: A kerékpárok listáját megjelenítő komponens.
-- `TermekComponent`: Egy adott termék részletes nézetét megjelenítő komponens.
-- `RolunkComponent`: Az "Rólunk" oldal komponense.
-- `KosárComponent`: Az "Rólunk" oldal komponense.
-- `LoginComponent`: Bejelentkezésért és regisztrációért felelős komponens.
-
-### Szolgáltatások
-- `ProductService`: A termékekkel kapcsolatos adatokat kezeli.
-- `PaginationService`: Az oldalak kezelését biztosító szolgáltatás.
-- `UserAuthService`: Felhasználókhoz kapcsolódó autentikációs szolgáltatás.
-
-### Routing
-A routing a `AppRoutingModule` modulban van definiálva. A különböző útvonalak a megfelelő komponenseket rendelik hozzájuk.
-
-### Modulok
-- `NgxPaginationModule`: A lapozást megvalósító modul.
-- `NgbModule`: A Bootstrap komponensek integrálására szolgáló modul.
-
-## Telepítés és Indítás
-1. Telepítsük a szükséges függőségeket a `npm install` paranccsal.
-2. Indítsuk el az alkalmazást a `ng serve` paranccsal.
-3. Navigáljunk a `http://localhost:4200/` címre a böngészőben.
-
 # Home komponens
 
 A Home komponens felelős a kezdőoldal tartalmának megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
