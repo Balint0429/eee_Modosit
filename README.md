@@ -1,3 +1,57 @@
+# Bikeapi Dokumentáció
+
+## Áttekintés
+Ez a dokumentáció a Bikeapi nevű Angular alkalmazásról szól, amely egy kerékpárkereskedés webes felületét biztosítja. Az alkalmazás lehetővé teszi a felhasználók számára, hogy böngésszenek és vásároljanak kerékpárokat, valamint szervizidőpontot foglaljanak.
+
+## Felhasználói Dokumentáció
+
+### Főoldal
+A főoldalon a felhasználók megtekinthetik a legújabb ajánlatokat és híreket.
+
+### Kerékpárok
+A "Kerékpárok" oldalon találhatóak a különböző kerékpármodellek listája. A felhasználók megtekinthetik a kerékpárok képeit, leírását, árát és gyártóját. Részletes információkért kattintsunk a "Részletek" gombra.
+
+### Rólunk
+Az "Rólunk" oldalon találhatóak információk a vállalatról és a szolgáltatásokról.
+
+### Bejelentkezés és Regisztráció
+A felhasználók bejelentkezhetnek vagy regisztrálhatnak az oldalon. Bejelentkezett felhasználók számára elérhetővé válik a "Rendelésem" menüpont.
+
+### Kosár
+A "Kosár" oldalon a felhasználók megtekinthetik a kosárba helyezett termékeket és véglegesíthetik a rendelésüket.
+
+### Rendelésem
+A "Rendelésem" oldalon a felhasználók megtekinthetik korábbi rendeléseiket.
+
+## Fejlesztői Dokumentáció
+
+### Komponensek
+- `HomeComponent`: A főoldal komponense.
+- `BiciklikComponent`: A kerékpárok listáját megjelenítő komponens.
+- `TermekComponent`: Egy adott termék részletes nézetét megjelenítő komponens.
+- `RolunkComponent`: Az "Rólunk" oldal komponense.
+- `LoginComponent`: Bejelentkezésért és regisztrációért felelős komponens.
+
+### Szolgáltatások
+- `ProductService`: A termékekkel kapcsolatos adatokat kezeli.
+- `PaginationService`: Az oldalak kezelését biztosító szolgáltatás.
+- `UserAuthService`: Felhasználókhoz kapcsolódó autentikációs szolgáltatás.
+
+### Routing
+A routing a `AppRoutingModule` modulban van definiálva. A különböző útvonalak a megfelelő komponenseket rendelik hozzájuk.
+
+### Könyvtárak és Modulok
+- `NgxPaginationModule`: A lapozást megvalósító modul.
+- `NgbModule`: A Bootstrap komponensek integrálására szolgáló modul.
+
+## Telepítés és Indítás
+1. Telepítsük a szükséges függőségeket a `npm install` paranccsal.
+2. Indítsuk el az alkalmazást a `ng serve` paranccsal.
+3. Navigáljunk a `http://localhost:4200/` címre a böngészőben.
+
+## További Segítség
+További segítségért és információkért tekintsük meg az [Angular CLI Overview and Command Reference](https://angular.io/cli) oldalt.
+
 # Regisztráció komponens
 
 A regisztráció komponens lehetővé teszi a felhasználók számára, hogy regisztráljanak az ISABIKE Kerékpárüzlet webhelyére.
