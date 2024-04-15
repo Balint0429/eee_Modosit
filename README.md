@@ -8,7 +8,7 @@ Ez a dokumentáció a Bikeapi nevű Angular alkalmazásról szól, amely egy ker
 ### Főoldal
 A főoldalon a felhasználók megtekinthetik a legújabb ajánlatokat és híreket.
 
-### Kerékpárok
+### Célok
 Mit csinál a program, ki a célközönség
 Az ISABIKE Kerékpárüzlet webalkalmazás lehetővé teszi a felhasználók számára kerékpárok böngészését, rendelését és a rendelések kezelését. A program célközönsége a kerékpárok iránt érdeklődő vásárlók.
 
