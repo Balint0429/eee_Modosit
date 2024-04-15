@@ -323,3 +323,31 @@ Ez a komponens felelős a vásárlók rendeléseinek rögzítéséért az ISABIK
 
 - Ellenőrizd az összes kötelező mező kitöltését a rendelés elküldése előtt.
 - Kezeld a szerver által visszaadott hibákat a rendelés küldésekor.
+
+# User-Rendeles komponens
+
+Ez a komponens felelős a felhasználó bevásárlókosarában található termékek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
+
+## Tartalom
+
+A komponens egy listát jelenít meg a felhasználó bevásárlókosarában található termékekről. Minden termékhez tartozik a termék neve, mennyisége és hozzáadásának ideje. Minden termékhez egy gomb is tartozik, amely lehetővé teszi a termék törlését a kosárból.
+
+## Műveletek
+
+### `getItems()`
+
+- **Leírás**: A felhasználó bevásárlókosarában található termékek lekérdezése.
+- **Feladatok**: Lekéri a felhasználó bevásárlókosarában található termékeket a megfelelő szolgáltatástól, majd megjeleníti azokat a felületen. Ha a kosár üres, kiír egy figyelmeztetést és visszairányítja a felhasználót a biciklik oldalra.
+
+### `deleteItem(id: any)`
+
+- **Leírás**: Termék törlése a kosárból.
+- **Feladatok**: Törli az adott terméket a kosárból a megfelelő szolgáltatás segítségével. A törlés után frissíti a kosár tartalmát.
+
+## Változók
+
+### `shoppingCartData`
+
+- **Típus**: any[]
+- **Leírás**: A felhasználó bevásárlókosarában található termékek tömbje.
+
