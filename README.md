@@ -178,7 +178,7 @@ A komponens egy regisztrációs űrlapot tartalmaz, amely lehetővé teszi a fel
 - **Leírás**: Ez a változó jelzi, hogy éppen folyamatban van-e az űrlap elküldése.
 - **Feladat**: Amikor az űrlap elküldése folyamatban van, ez a változó igaz értéket kap, és letiltja az űrlap újbóli elküldését.
 
-# Bejelentkezés
+# Bejelentkezés komponens
 
 Ez a komponens felelős a felhasználó bejelentkezési felületének megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
