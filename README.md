@@ -139,11 +139,6 @@ A komponens egy regisztrációs űrlapot tartalmaz, amely lehetővé teszi a fel
 - Az űrlap ellenőrzi a megadott adatok formátumát és érvényességét.
 - Ha sikeres a regisztráció, a felhasználó további tevékenységeket végezhet az alkalmazáson belül.
 
-## Figyelmeztetések
-
-- A jelszónak legalább 6 karakter hosszúnak kell lennie.
-- A felhasználónak érvényes e-mail címet kell megadnia.
-- A felhasználónak kitöltendő minden kötelező mezőt.
 
 ## Megjegyzések
 
