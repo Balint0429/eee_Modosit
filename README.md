@@ -169,8 +169,8 @@ Ez a komponens felelős a felhasználó bejelentkezési felületének megjelení
 
 - **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó be akar jelentkezni.
 - **Feladatok**:
-  1. Ellenőrzi a beviteli mezők validitását.
-  2. Elküldi a bejelentkezési adatokat a backend szolgáltatásnak.
+  A. Ellenőrzi a beviteli mezők validitását.
+  B. Elküldi a bejelentkezési adatokat a backend szolgáltatásnak.
   3. Amennyiben a bejelentkezés sikeres, átirányítja a felhasználót a kezdőoldalra.
   4. Mentésre kerül a token a localStorage-be.
   5. Lekéri a felhasználó adatait a localStorage-ból és elmenti őket.
