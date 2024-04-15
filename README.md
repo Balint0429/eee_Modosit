@@ -311,13 +311,17 @@ Ebben a szakaszban megtalálhatók az ISABIKE elérhetőségi adatai, mint péld
 Ez az oldal a szerviz kínálatokat mutatja be az ISABIKE kerékpárüzletben. A felsorolt szolgáltatásokat és azok árait tartalmazza.
 
 ### Állapotfelmérés
+Ez a szolgáltatás magában foglalja a fékrendszer vizsgálatát, szekunder áttétel vizsgálatát, gumiabroncsok állapotának ellenőrzése.A munkadíj: 8 000 Ft.
 ### Olaj- és szűrőcsere
+Ez a szolgáltatás az olaj- és szűrőcserét jelenti a kezelési útmutatóban javasolt periódus alapján. A munkadíj: 8 000 Ft.
 ### Láncszett csere
+Ez a szolgáltatás a jó állapotú szekunder áttétel cseréjét szettben tartalmazza. A munkadíj: 14 000 Ft-tól.
 ### Fékszerviz
 Fontos a biztonságos közlekedés érdekében. Ez a szolgáltatás magában foglalja a fékalkatrészek ellenőrzését és szükség esetén cseréjét. A munkadíj: 12 000 Ft-tól.
 ### Teleszkópszerviz 
 A kényelmes használat érdekében elengedhetetlen a tökéletes állapotú futómű. A munkadíj: 40 000 Ft-tól.
 ### Gumiabroncs csere
+A motorkerékpár legfontosabb alkatrésze a gumiabroncs. Ez a szolgáltatás a gumiabroncs cseréjét jelenti. A munkadíj: 10 000 Ft-tól.
 
 # Rendeles komponens
 
