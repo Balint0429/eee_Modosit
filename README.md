@@ -409,3 +409,118 @@ A komponens egy listát jelenít meg a felhasználó rendeléseiről, minden ren
 - **Típus**: any[]
 - **Leírás**: A kiválasztott rendeléshez tartozó termékek tömbje.
 
+# UserAuthService Szolgáltatás
+
+Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokhoz kapcsolódó műveletekkel.
+
+## Metódusok
+
+### `login(loginObj: any): Observable<any>`
+
+- **Leírás**: Felhasználó bejelentkezésének kezelése.
+- **Végpont**: `POST /api/login`
+- **Paraméter**: loginObj - Bejelentkezési adatokat tartalmazó objektum.
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP POST kérést a bejelentkezési végpontra a megadott adatokkal. Visszatérési értékként egy Observable-t kapunk, amely tartalmazza a bejelentkezési választ.
+
+### `getUserData(token: any): Observable<any>`
+
+- **Leírás**: Felhasználó adatainak lekérése a token alapján.
+- **Végpont**: `POST /api/getonefelhasznalo`
+- **Paraméter**: token - Felhasználóhoz tartozó token.
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP POST kérést a felhasználó adatainak lekérdezésére a token alapján. Visszatérési értékként egy Observable-t kapunk, amely tartalmazza a felhasználó adatait.
+
+### `register(felhasznalo_nev: string, kereszt_nev: string, vezetek_nev: string, email: string, password: string): void`
+
+- **Leírás**: Felhasználó regisztrációjának kezelése.
+- **Feladatok**: Ez a metódus küld egy regisztrációs kérést a megadott adatokkal a backend számára.
+
+### `verifyAccount(data: VerifyPayload): Promise<any>`
+
+- **Leírás**: Felhasználó fiókjának ellenőrzése a megadott kóddal.
+- **Végpont**: `PUT /api/verify`
+- **Paraméter**: data - Ellenőrzési kódot tartalmazó objektum.
+- **Visszatérési érték típusa**: Promise<any>
+- **Feladatok**: Ez a metódus küld egy HTTP PUT kérést a felhasználó fiókjának ellenőrzésére a megadott kóddal. A visszatérési érték egy Promise, amely tartalmazza az ellenőrzés eredményét.
+
+### `isLoggedIn(): boolean`
+
+- **Leírás**: Ellenőrzi, hogy a felhasználó be van-e jelentkezve.
+- **Visszatérési érték típusa**: boolean
+- **Feladatok**: Ez a metódus ellenőrzi, hogy a felhasználó be van-e jelentkezve a helyi tárolt tokennel.
+
+### `logout(asd: any): Observable<any>`
+
+- **Leírás**: Felhasználó kijelentkezése.
+- **Végpont**: `POST /api/logout`
+- **Paraméter**: asd - Felhasználóhoz tartozó token.
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP POST kérést a kijelentkezési végpontra a felhasználóhoz tartozó tokennel. Visszatérési értékként egy Observable-t kapunk, amely tartalmazza a kijelentkezési választ.
+
+# Kosár Szolgáltatás
+
+Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekkel.
+
+## Metódusok
+
+### `addToCart(productId: any, quantity: number): Observable<any>`
+
+- **Leírás**: Termék hozzáadása a kosárhoz.
+- **Végpont**: `POST /api/addkosar`
+- **Paraméterek**: 
+  - productId: A termék azonosítója, amelyet a kosárhoz szeretnénk adni.
+  - quantity: A termék mennyisége.
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP POST kérést a kosárhoz adás végpontra a megadott adatokkal.
+
+### `getCartItems(): Observable<any>`
+
+- **Leírás**: Kosár elemeinek lekérése.
+- **Végpont**: `POST /api/getonekosar`
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP POST kérést a kosár elemeinek lekérdezésére.
+
+### `updateCartItem(cartItemId: number, quantity: number): Observable<any>`
+
+- **Leírás**: Kosárban lévő elem mennyiségének frissítése.
+- **Végpont**: `PUT /api/updatekosar`
+- **Paraméterek**: 
+  - cartItemId: A kosárban lévő elem azonosítója.
+  - quantity: Az új mennyiség.
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP PUT kérést a kosárban lévő elem mennyiségének frissítésére.
+
+### `removeCartItem(cartItemId: number): Observable<any>`
+
+- **Leírás**: Elem eltávolítása a kosárból.
+- **Végpont**: `DELETE /api/deletekosar/:cartItemId`
+- **Paraméter**: cartItemId: A kosárból eltávolítandó elem azonosítója.
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP DELETE kérést a megadott elem eltávolítására a kosárból.
+
+### `submitOrder(orderData: any): Observable<any>`
+
+- **Leírás**: Rendelés leadása.
+- **Végpont**: `POST /api/addrendeles`
+- **Paraméter**: orderData: A rendelés adatait tartalmazó objektum.
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP POST kérést a rendelés leadás végpontra a megadott adatokkal.
+
+### `getOrder(): Observable<any>`
+
+- **Leírás**: Felhasználó rendeléseinek lekérése.
+- **Végpont**: `POST /api/getonerendeles`
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP POST kérést a felhasználó rendeléseinek lekérdezésére.
+
+### `getOrderData(id: any): Observable<any>`
+
+- **Leírás**: Egy rendelés részletes adatainak lekérése.
+- **Végpont**: `GET /api/getonerendelestermekek/:id`
+- **Paraméter**: id: A rendelés azonosítója.
+- **Visszatérési érték típusa**: Observable<any>
+- **Feladatok**: Ez a metódus küld egy HTTP GET kérést a megadott rendelés részletes adatainak lekérdezésére.
+
+
+
