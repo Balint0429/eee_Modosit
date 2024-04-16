@@ -80,12 +80,12 @@ A Biciklik komponens felelős a kerékpártermékek megjelenítéséért az ISAB
 - **Leírás**: Ez a metódus lekéri a kerékpártermékeket a backend szolgáltatásból.
 - **Feladat**: Frissíti a `products` tömböt a lekért termékekkel, valamint beállítja az összes termék számát a lapozáshoz.
 
-### `onPageChange(pageNumber: number)`
+### `onPageChange()`
 
 - **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó vált az oldalak között.
 - **Feladat**: Beállítja az aktuális oldalszámot a kapott oldalszámra.
 
-### `showProductDetails(productId: number)`
+### `showProductDetails()`
 
 - **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó részleteket kér egy termékről.
 - **Feladat**: Elmenti a termék azonosítóját a localStorage-ben, majd navigál a részletek oldalra.
@@ -350,7 +350,7 @@ A komponens egy listát jelenít meg a felhasználó bevásárlókosarában tal�
 - **Leírás**: A felhasználó bevásárlókosarában található termékek lekérdezése.
 - **Feladatok**: Lekéri a felhasználó bevásárlókosarában található termékeket a megfelelő szolgáltatástól, majd megjeleníti azokat a felületen. Ha a kosár üres, kiír egy figyelmeztetést és visszairányítja a felhasználót a biciklik oldalra.
 
-### `deleteItem(id: any)`
+### `deleteItem()`
 
 - **Leírás**: Termék törlése a kosárból.
 - **Feladatok**: Törli az adott terméket a kosárból a megfelelő szolgáltatás segítségével. A törlés után frissíti a kosár tartalmát.
@@ -382,7 +382,7 @@ A komponens egy listát jelenít meg a felhasználó rendeléseiről, minden ren
 - **Leírás**: Egy rendeléshez tartozó termékek lekérdezése.
 - **Feladatok**: Lekéri az adott rendeléshez tartozó termékeket a megfelelő szolgáltatástól, majd megjeleníti azokat egy felugró üzenetben. Az üzenet tartalmazza a termék nevét, darabszámát, egységárát és állapotát.
 
-### `kezbesitve(y)`
+### `kezbesitve()`
 
 - **Leírás**: Állapot visszaadása szöveges formában.
 - **Feladatok**: Az adott szám alapján visszaadja a megfelelő állapot szöveges formában.
@@ -415,7 +415,7 @@ Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokho
 
 ## Metódusok
 
-### `login(loginObj: any): Observable<any>`
+### `login(): Observable<any>`
 
 - **Leírás**: Felhasználó bejelentkezésének kezelése.
 - **Végpont**: `POST /api/login`
@@ -423,7 +423,7 @@ Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokho
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a bejelentkezési végpontra a megadott adatokkal. Visszatérési értékként egy Observable-t kapunk, amely tartalmazza a bejelentkezési választ.
 
-### `getUserData(token: any): Observable<any>`
+### `getUserData(): Observable<any>`
 
 - **Leírás**: Felhasználó adatainak lekérése a token alapján.
 - **Végpont**: `POST /api/getonefelhasznalo`
@@ -431,12 +431,12 @@ Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokho
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a felhasználó adatainak lekérdezésére a token alapján. Visszatérési értékként egy Observable-t kapunk, amely tartalmazza a felhasználó adatait.
 
-### `register(felhasznalo_nev: string, kereszt_nev: string, vezetek_nev: string, email: string, password: string): void`
+### `register(): void`
 
 - **Leírás**: Felhasználó regisztrációjának kezelése.
 - **Feladatok**: Ez a metódus küld egy regisztrációs kérést a megadott adatokkal a backend számára.
 
-### `verifyAccount(data: VerifyPayload): Promise<any>`
+### `verifyAccount(): Promise<any>`
 
 - **Leírás**: Felhasználó fiókjának ellenőrzése a megadott kóddal.
 - **Végpont**: `PUT /api/verify`
@@ -450,7 +450,7 @@ Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokho
 - **Visszatérési érték típusa**: boolean
 - **Feladatok**: Ez a metódus ellenőrzi, hogy a felhasználó be van-e jelentkezve a helyi tárolt tokennel.
 
-### `logout(asd: any): Observable<any>`
+### `logout(): Observable<any>`
 
 - **Leírás**: Felhasználó kijelentkezése.
 - **Végpont**: `POST /api/logout`
@@ -464,7 +464,7 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 
 ## Metódusok
 
-### `addToCart(productId: any, quantity: number): Observable<any>`
+### `addToCart(): Observable<any>`
 
 - **Leírás**: Termék hozzáadása a kosárhoz.
 - **Végpont**: `POST /api/addkosar`
@@ -481,7 +481,7 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a kosár elemeinek lekérdezésére.
 
-### `updateCartItem(cartItemId: number, quantity: number): Observable<any>`
+### `updateCartItem(): Observable<any>`
 
 - **Leírás**: Kosárban lévő elem mennyiségének frissítése.
 - **Végpont**: `PUT /api/updatekosar`
@@ -491,7 +491,7 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP PUT kérést a kosárban lévő elem mennyiségének frissítésére.
 
-### `removeCartItem(cartItemId: number): Observable<any>`
+### `removeCartItem(): Observable<any>`
 
 - **Leírás**: Elem eltávolítása a kosárból.
 - **Végpont**: `DELETE /api/deletekosar/:cartItemId`
@@ -499,7 +499,7 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP DELETE kérést a megadott elem eltávolítására a kosárból.
 
-### `submitOrder(orderData: any): Observable<any>`
+### `submitOrder(): Observable<any>`
 
 - **Leírás**: Rendelés leadása.
 - **Végpont**: `POST /api/addrendeles`
@@ -514,7 +514,7 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a felhasználó rendeléseinek lekérdezésére.
 
-### `getOrderData(id: any): Observable<any>`
+### `getOrderData(): Observable<any>`
 
 - **Leírás**: Egy rendelés részletes adatainak lekérése.
 - **Végpont**: `GET /api/getonerendelestermekek/:id`
@@ -528,7 +528,7 @@ Ez a szolgáltatás felelős az autentikációs műveletekhez kapcsolódó ügyf
 
 ## Metódusok
 
-### `register(felhasznalo_nev: string, kereszt_nev: string, vezetek_nev: string, email: string, password: string): Observable<any>`
+### `register():`
 
 - **Leírás**: Regisztrálja az új felhasználót az adott névvel, e-mail címmel és jelszóval.
 - **Paraméterek**: 
@@ -546,7 +546,7 @@ Ez a szolgáltatás felelős az aktuális oldalszám tárolásáért és frissí
 
 ## Metódusok
 
-### `setCurrentPage(page: number): void`
+### `setCurrentPage(): void`
 
 - **Leírás**: Beállítja az aktuális oldalszámot.
 - **Paraméter**: 
@@ -560,14 +560,14 @@ Ez a szolgáltatás felelős a termékekkel kapcsolatos adatok lekérdezéséér
 
 ## Főbb funkciók
 
-### `getProducts(): Observable<any[]>`
+### `getProducts(): `
 
 - **Leírás**: Termékek lekérése.
 - **Végpont**: `GET /api/termekek/100`
 - **Visszatérési érték típusa**: Observable<any[]>
 - **Feladatok**: Ez a metódus küld egy HTTP GET kérést a termékek lekérdezésére.
 
-### `getProduct(id: number): Observable<any>`
+### `getProduct(): `
 
 - **Leírás**: Egy termék lekérése az azonosítója alapján.
 - **Végpont**: `GET /api/onetermekek/:id`
