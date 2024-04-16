@@ -526,7 +526,7 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 
 Ez a szolgáltatás felelős az aktuális oldalszám tárolásáért és frissítéséért.
 
-## Főbb funkciók
+## Metódusok
 
 ### `setCurrentPage(page: number): void`
 
@@ -535,6 +535,22 @@ Ez a szolgáltatás felelős az aktuális oldalszám tárolásáért és frissí
   - page: Az új aktuális oldalszám.
 - **Feladatok**: Ez a metódus frissíti az aktuális oldalszám értékét a megadott értékre.
 
+
+# Termék Szolgáltatás
+
+Ez a szolgáltatás felelős a termékek lekérdezéséért és egyedi termék részleteinek lekérdezéséért.
+
 ## Metódusok
 
+### `getProducts(): Observable<any[]>`
+
+- **Leírás**: Lekéri az összes terméket.
+- **Visszatérési érték**: Egy Observable, amely tömbként tartalmazza az összes terméket.
+
+### `getProduct(id: number): Observable<any>`
+
+- **Leírás**: Lekéri az adott azonosítójú egyedi termék részleteit.
+- **Paraméter**: 
+  - id: Az egyedi termék azonosítója.
+- **Visszatérési érték**: Egy Observable, amely tartalmazza az adott azonosítójú egyedi termék részleteit.
 
