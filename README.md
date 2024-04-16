@@ -522,5 +522,19 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP GET kérést a megadott rendelés részletes adatainak lekérdezésére.
 
+# Oldalszámozás Szolgáltatás
+
+Ez a szolgáltatás felelős az aktuális oldalszám tárolásáért és frissítéséért.
+
+## Főbb funkciók
+
+### `setCurrentPage(page: number): void`
+
+- **Leírás**: Beállítja az aktuális oldalszámot.
+- **Paraméter**: 
+  - page: Az új aktuális oldalszám.
+- **Feladatok**: Ez a metódus frissíti az aktuális oldalszám értékét a megadott értékre.
+
+## Metódusok
 
 
