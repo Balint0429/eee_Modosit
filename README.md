@@ -522,7 +522,25 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP GET kérést a megadott rendelés részletes adatainak lekérdezésére.
 
-# Oldalszámozás Szolgáltatás
+# Ügyfél Registráló Szolgáltatás
+
+Ez a szolgáltatás felelős az autentikációs műveletekhez kapcsolódó ügyféloldali feladatok végrehajtásáért.
+
+## Metódusok
+
+### `register(felhasznalo_nev: string, kereszt_nev: string, vezetek_nev: string, email: string, password: string): Observable<any>`
+
+- **Leírás**: Regisztrálja az új felhasználót az adott névvel, e-mail címmel és jelszóval.
+- **Paraméterek**: 
+  - felhasznalo_nev: string - A regisztrált felhasználó teljes neve.
+  - kereszt_nev: string - A felhasználó keresztneve.
+  - vezetek_nev: string - A felhasználó vezetékneve.
+  - email: string - A felhasználó e-mail címe.
+  - password: string - A felhasználó jelszava.
+- **Visszatérési érték**: Egy Observable, amely tartalmazza a regisztrációval kapcsolatos válaszobjektumot.
+
+
+# Pagination Szolgáltatás
 
 Ez a szolgáltatás felelős az aktuális oldalszám tárolásáért és frissítéséért.
 
