@@ -423,7 +423,7 @@ Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokho
 
 ## Metódusok
 
-### `login(): Observable<any>`
+### `login():`
 
 - **Leírás**: Felhasználó bejelentkezésének kezelése.
 - **Végpont**: `POST /api/login`
@@ -431,7 +431,7 @@ Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokho
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a bejelentkezési végpontra a megadott adatokkal. Visszatérési értékként egy Observable-t kapunk, amely tartalmazza a bejelentkezési választ.
 
-### `getUserData(): Observable<any>`
+### `getUserData(): `
 
 - **Leírás**: Felhasználó adatainak lekérése a token alapján.
 - **Végpont**: `POST /api/getonefelhasznalo`
@@ -439,12 +439,12 @@ Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokho
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a felhasználó adatainak lekérdezésére a token alapján. Visszatérési értékként egy Observable-t kapunk, amely tartalmazza a felhasználó adatait.
 
-### `register(): void`
+### `register(): `
 
 - **Leírás**: Felhasználó regisztrációjának kezelése.
 - **Feladatok**: Ez a metódus küld egy regisztrációs kérést a megadott adatokkal a backend számára.
 
-### `verifyAccount(): Promise<any>`
+### `verifyAccount(): `
 
 - **Leírás**: Felhasználó fiókjának ellenőrzése a megadott kóddal.
 - **Végpont**: `PUT /api/verify`
@@ -452,13 +452,13 @@ Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokho
 - **Visszatérési érték típusa**: Promise<any>
 - **Feladatok**: Ez a metódus küld egy HTTP PUT kérést a felhasználó fiókjának ellenőrzésére a megadott kóddal. A visszatérési érték egy Promise, amely tartalmazza az ellenőrzés eredményét.
 
-### `isLoggedIn(): boolean`
+### `isLoggedIn(): `
 
 - **Leírás**: Ellenőrzi, hogy a felhasználó be van-e jelentkezve.
 - **Visszatérési érték típusa**: boolean
 - **Feladatok**: Ez a metódus ellenőrzi, hogy a felhasználó be van-e jelentkezve a helyi tárolt tokennel.
 
-### `logout(): Observable<any>`
+### `logout(): `
 
 - **Leírás**: Felhasználó kijelentkezése.
 - **Végpont**: `POST /api/logout`
