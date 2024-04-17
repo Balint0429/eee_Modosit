@@ -19,7 +19,7 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
 - **Biciklik:** Megtekinthetik a termékkínálatot, információkat kaphatnak a az árol és elérhetőségről.
   Az egyes biciklik kártyáiban található részletek gombra kattintva átvisz a termek oldalra.
 - **Termék:** Ez a oldal felelős egy adott termék egyébb részleteinek megjelenítésért mint kategoria, mennyiség rakáron, súly, szín, elérhetőség.
-  A hozzáadás a kosárhoz gombra kattintva felveszi a kosárba a terméket.
+  A hozzáadás a kosárhoz gombra kattintva felveszi a kosárba a terméket. Ha a másik termék megtekintése gombra kattintunk visza irányit a bicikli oldalra.
 - **Szerviz:** A kinált szervizszolgáltatásokl kapcsolatban informálodhatnak.
 - **Rólunk:** További információkat találnak a vállalkozásról és annak történetéről.
 - **Bejelentkezés:** Felhasználói fiókóba lehet bejelenkezni e-mail cím és jelszó megadásával.
