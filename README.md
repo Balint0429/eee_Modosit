@@ -13,11 +13,12 @@ Az ISABIKE Kerékpárüzlet alkalmazás webes környezetben fut, így elérhető
 
 ### Használat:
 Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngészőben navigálva érik el az alábbi oldalakat:
-- **Főoldal:** Az ISABIKE főoldalára érkeznek, ahol általános információkat találnak a vállalkozásról.
-  Rákattintva a részletek gombra, átmegy a termek oldalra.
-- **Biciklik:** Megtekinthetik a termékkínálatot, információkat kaphatnak a különböző modellekről.
+
+- **Főoldal:** Az ISABIKE főoldalára érkeznek, ahol láthatják az elérhető márkákat és 6 ajánlott terméket.
   Az egyes biciklik kártyáiban található részletek gombra kattintva átvisz a termek oldalra.
-- **Termék:**
+- **Biciklik:** Megtekinthetik a termékkínálatot, információkat kaphatnak a az árol és elérhetőségről.
+  Az egyes biciklik kártyáiban található részletek gombra kattintva átvisz a termek oldalra.
+- **Termék:** Ez a oldal felelős egy adott termék részleteinek megjelenítéséért mint gyártó, mennyiség rakáron, súly
 - **Szerviz:** A kinált szervizszolgáltatásokl kapcsolatban informálodhatnak.
 - **Rólunk:** További információkat találnak a vállalkozásról és annak történetéről.
 - **Bejelentkezés:** Felhasználói fiók létrehozása e-mail cím és jelszó megadásával.
