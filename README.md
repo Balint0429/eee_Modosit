@@ -18,13 +18,15 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
   Az egyes biciklik kártyáiban található részletek gombra kattintva átvisz a termek oldalra.
 - **Biciklik:** Megtekinthetik a termékkínálatot, információkat kaphatnak a az árol és elérhetőségről.
   Az egyes biciklik kártyáiban található részletek gombra kattintva átvisz a termek oldalra.
-- **Termék:** Ez a oldal felelős egy adott termék részleteinek megjelenítéséért mint gyártó, mennyiség rakáron, súly
+- **Termék:** Ez a oldal felelős egy adott termék egyébb részleteinek megjelenítésért mint kategoria, mennyiség rakáron, súly, szín, elérhetőség.
+  A hozzáadás a kosárhoz gombra kattintva felveszi a kosárba a terméket.
 - **Szerviz:** A kinált szervizszolgáltatásokl kapcsolatban informálodhatnak.
 - **Rólunk:** További információkat találnak a vállalkozásról és annak történetéről.
-- **Bejelentkezés:** Felhasználói fiók létrehozása e-mail cím és jelszó megadásával.
-- **Regisztráció:** Felhasználói fiók létrehozása a megfelelő adatokkal.
-- **Viszaigazolás:** Felhasználói fiók aktiválása az e-mailben kapot kódal.
-- **Kosár:** A kiválasztott termékeket itt tárolodik vásárlás előtt.
+- **Bejelentkezés:** Felhasználói fiókóba lehet bejelenkezni e-mail cím és jelszó megadásával. Amikor rányomunk a bejelenkezés gombra
+- **Regisztráció:** Felhasználói fiókót lehet létrehozni e-mail cím, név(Felhasználónév), keresztnév, vezetéknév, és jelszó megadásával. Amikor rányomunk a regisztráció gombra akkor 
+- **Viszaigazolás:** Felhasználói fiók aktiválása az e-mailben kapot  5 számjegyű kódal.
+- **Kosár:** A kiválasztott termékeket itt tárolodnak vásárlás előtt, láthato termék neve:, mennyisége, a kosárhoz adás ideje.
+- Ha a megrendelés gombra katintunk akkor átvizs a rendelés oldara.
 - **Rendelés:** Felhasználók megadják az adataikat és leadják a rendelés amiről e-mail értesitést kapnak.
 - **Felhasználó-Rendelések:** Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát.
 
