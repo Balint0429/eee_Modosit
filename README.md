@@ -99,7 +99,7 @@ A Biciklik komponens felelős a kerékpártermékek megjelenítéséért az ISAB
 - **Leírás**: Ez a metódus hívódik meg, amikor a felhasználó részleteket kér egy termékről.
 - **Feladat**: Elmenti a termék azonosítóját a localStorage-ben, majd navigál a részletek oldalra.
 
-# Regisztráció komponens
+# Register komponens
 
 A regisztráció komponens lehetővé teszi a felhasználók számára, hogy regisztráljanak az ISABIKE Kerékpárüzlet webhelyére.
 
@@ -158,7 +158,7 @@ A komponens egy regisztrációs űrlapot tartalmaz, amely lehetővé teszi a fel
 - **Leírás**: Ez a változó jelzi, hogy éppen folyamatban van-e az űrlap elküldése.
 - **Feladat**: Amikor az űrlap elküldése folyamatban van, ez a változó igaz értéket kap, és letiltja az űrlap újbóli elküldését.
 
-# Bejelentkezés komponens
+# Login komponens
 
 Ez a komponens felelős a felhasználó bejelentkezési felületének megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -228,7 +228,7 @@ Ezen részben a felhasználó beírhatja az e-mailben kapott 5 számjegyű meger
 - **Típus**: boolean
 - **Leírás**: Megadja, hogy a fiók megerősítése sikeres volt-e vagy sem.
 
-# Termék Részletek komponens
+# Uer-rendeles komponens
 
 Ez a komponens felelős egy adott termék részleteinek megjelenítéséért az ISABIKE Kerékpárüzlet webhelyén.
 
@@ -467,7 +467,7 @@ Ez a szolgáltatás felelős a felhasználók autentikációjával és az azokho
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a kijelentkezési végpontra a felhasználóhoz tartozó tokennel. Visszatérési értékként egy Observable-t kapunk, amely tartalmazza a kijelentkezési választ.
 
-# Kosár Szolgáltatás
+# Cart Szolgáltatás
 
 Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekkel.
 
@@ -531,7 +531,7 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP GET kérést a megadott rendelés részletes adatainak lekérdezésére.
 
-# Ügyfél Registráló Szolgáltatás
+# Authentication-client Szolgáltatás
 
 Ez a szolgáltatás felelős az autentikációs műveletekhez kapcsolódó ügyféloldali feladatok végrehajtásáért.
 
@@ -563,7 +563,7 @@ Ez a szolgáltatás felelős az aktuális oldalszám tárolásáért és frissí
 - **Feladatok**: Ez a metódus frissíti az aktuális oldalszám értékét a megadott értékre.
 
 
-# Termékszolgáltatás
+# Product szolgáltatás
 
 Ez a szolgáltatás felelős a termékekkel kapcsolatos adatok lekérdezéséért.
 
