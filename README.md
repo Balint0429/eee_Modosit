@@ -1,4 +1,4 @@
-# -------- Bikeapi Frontend Dokumentáció --------
+  # --- Bikeapi Frontend Dokumentáció ---
 
 # Felhasználói Dokumentáció
 
