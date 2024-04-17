@@ -30,8 +30,8 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
   Ha a megerősités gombra katintunk akkor átvizs a bejelenkezés oldara.
 - **Kosár:** A kiválasztott termékeket itt tárolodnak vásárlás előtt, láthato termék neve:, menyisége, a kosárhoz adás ideje adatokat.
   Ha a megrendelés gombra katintunk akkor átvizs a rendelés oldara.
-- **Rendelés:** Felhasználók megadják az adataikat és leadják a rendelés amiről e-mail értesitést kapnak. Ha a küldés gombra katintunk akkor felveszi a rendelést és átvizs a főoldalra oldara.  
-- **Felhasználó-Rendelések:** Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát. Rendelés adatai gombra katintva megjeleniti rendelés ideje, megjegyzés, szálitó(nem mükődik) és fizetés opció(nem mükődik) adatokat.
+- **Rendelés:** Felhasználók megadják az adataikat (szálitó és fizetés opció nem mükődik) és leadják a rendelés amiről e-mail értesitést kapnak. Ha a küldés gombra katintunk akkor felveszi a rendelést és átvizs a főoldalra oldara.  
+- **Felhasználó-Rendelések:** Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát. Rendelés adatai gombra katintva megjeleniti rendelés ideje, megjegyzés, szálitó és fizetés opció adatokat.
 
 
 # Fejlesztői Dokumentáció
