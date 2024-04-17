@@ -16,8 +16,8 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
 
 - **Főoldal:** Az ISABIKE főoldalára érkeznek, ahol láthatják az elérhető márkákat és 6 ajánlott terméket.
   Az egyes biciklik kártyáiban található részletek gombra kattintva átvisz a termek oldalra.
-- **Biciklik:** Megtekinthetik a termékkínálatot, információkat kaphatnak a az árol és elérhetőségről.
-  Az egyes biciklik kártyáiban található részletek gombra kattintva átvisz a termek oldalra.
+- **Biciklik:** Megtekinthetik a termékkínálatot, információkat kaphatnak a az árol és elérhetőségről. Az előző és következő gombokal lehet a temékeket lapozni.
+  Az egyes biciklik kártyáiban található részletek gombra kattintva átvisz a termek oldalra. A
 - **Termék:** Ez a oldal felelős egy adott termék egyébb részleteinek megjelenítésért mint kategoria, mennyiség rakáron, súly, szín, elérhetőség.
   A hozzáadás a kosárhoz gombra kattintva felveszi a kosárba a terméket. Ha a másik termék megtekintése gombra kattintunk visza irányit a bicikli oldalra.
 - **Szerviz:** A kinált szervizszolgáltatásokl kapcsolatban informálodhatnak.
