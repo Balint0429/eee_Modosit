@@ -570,7 +570,7 @@ Ez a szolgáltatás felelős a termékekkel kapcsolatos adatok lekérdezéséér
 ### `getProducts(): `
 
 - **Leírás**: Termékek lekérése.
-- **Végpont**: `GET /api/termekek/100`
+- **Végpont**: `GET /api/termekek/ `
 - **Visszatérési érték típusa**: Observable<any[]>
 - **Feladatok**: Ez a metódus küld egy HTTP GET kérést a termékek lekérdezésére.
 
