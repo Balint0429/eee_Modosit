@@ -472,7 +472,7 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 
 ## Metódusok
 
-### `addToCart(): Observable<any>`
+### `addToCart(): `
 
 - **Leírás**: Termék hozzáadása a kosárhoz.
 - **Végpont**: `POST /api/addkosar`
@@ -482,14 +482,14 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a kosárhoz adás végpontra a megadott adatokkal.
 
-### `getCartItems(): Observable<any>`
+### `getCartItems():`
 
 - **Leírás**: Kosár elemeinek lekérése.
 - **Végpont**: `POST /api/getonekosar`
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a kosár elemeinek lekérdezésére.
 
-### `updateCartItem(): Observable<any>`
+### `updateCartItem(): `
 
 - **Leírás**: Kosárban lévő elem mennyiségének frissítése.
 - **Végpont**: `PUT /api/updatekosar`
@@ -499,7 +499,7 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP PUT kérést a kosárban lévő elem mennyiségének frissítésére.
 
-### `removeCartItem(): Observable<any>`
+### `removeCartItem(): `
 
 - **Leírás**: Elem eltávolítása a kosárból.
 - **Végpont**: `DELETE /api/deletekosar/:cartItemId`
@@ -507,22 +507,21 @@ Ez a szolgáltatás felelős a felhasználó kosarával kapcsolatos műveletekke
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP DELETE kérést a megadott elem eltávolítására a kosárból.
 
-### `submitOrder(): Observable<any>`
-
+### `submitOrder(): `
 - **Leírás**: Rendelés leadása.
 - **Végpont**: `POST /api/addrendeles`
 - **Paraméter**: orderData: A rendelés adatait tartalmazó objektum.
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a rendelés leadás végpontra a megadott adatokkal.
 
-### `getOrder(): Observable<any>`
+### `getOrder(): `
 
 - **Leírás**: Felhasználó rendeléseinek lekérése.
 - **Végpont**: `POST /api/getonerendeles`
 - **Visszatérési érték típusa**: Observable<any>
 - **Feladatok**: Ez a metódus küld egy HTTP POST kérést a felhasználó rendeléseinek lekérdezésére.
 
-### `getOrderData(): Observable<any>`
+### `getOrderData(): `
 
 - **Leírás**: Egy rendelés részletes adatainak lekérése.
 - **Végpont**: `GET /api/getonerendelestermekek/:id`
@@ -554,7 +553,7 @@ Ez a szolgáltatás felelős az aktuális oldalszám tárolásáért és frissí
 
 ## Metódusok
 
-### `setCurrentPage(): void`
+### `setCurrentPage(): `
 
 - **Leírás**: Beállítja az aktuális oldalszámot.
 - **Paraméter**: 
