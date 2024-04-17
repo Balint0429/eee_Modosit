@@ -1,6 +1,6 @@
-## Bikeapi Frontend Dokumentáció 
+# Bikeapi Frontend Dokumentáció 
 
-# Felhasználói Dokumentáció
+ # Felhasználói Dokumentáció
 
 ### Célok
 A webalkalmazás célközönsége kerékpárok iránt érdeklődő felhasználók, akik szeretnék böngészni a kínálatot, részletes információkat szeretnének kapni a különböző modellekről, valamint vásárolni szeretnének a platformon keresztül.
