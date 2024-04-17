@@ -1,6 +1,7 @@
 # Bikeapi Frontend Dokumentáció
+# <p style="text-align: center;">Text_content</p>
 
-- # Felhasználói Dokumentáció
+# Felhasználói Dokumentáció
 
 ### Célok
 A webalkalmazás célközönsége kerékpárok iránt érdeklődő felhasználók, akik szeretnék böngészni a kínálatot, részletes információkat szeretnének kapni a különböző modellekről, valamint vásárolni szeretnének a platformon keresztül.
@@ -34,7 +35,7 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
 - **Felhasználó-Rendelések:** Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát. Rendelés adatai gombra katintva megjeleniti rendelés ideje, megjegyzés, szálitó(nem mükődik) és fizetés opció(nem mükődik) adatokat.
 
 
-- # Fejlesztői Dokumentáció
+  # Fejlesztői Dokumentáció
 
 # Home komponens
 
