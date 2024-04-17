@@ -22,11 +22,14 @@ Az alkalmazás használata egyszerű és intuitív. A felhasználók a böngész
   A hozzáadás a kosárhoz gombra kattintva felveszi a kosárba a terméket.
 - **Szerviz:** A kinált szervizszolgáltatásokl kapcsolatban informálodhatnak.
 - **Rólunk:** További információkat találnak a vállalkozásról és annak történetéről.
-- **Bejelentkezés:** Felhasználói fiókóba lehet bejelenkezni e-mail cím és jelszó megadásával. Amikor rányomunk a bejelenkezés gombra
-- **Regisztráció:** Felhasználói fiókót lehet létrehozni e-mail cím, név(Felhasználónév), keresztnév, vezetéknév, és jelszó megadásával. Amikor rányomunk a regisztráció gombra akkor 
+- **Bejelentkezés:** Felhasználói fiókóba lehet bejelenkezni e-mail cím és jelszó megadásával.
+  Amikor rányomunk a bejelenkezés gombra akkor elküdi a bejelenkezés a backendre és átvizs a főoldlra .
+- **Regisztráció:** Felhasználói fiókót lehet létrehozni e-mail cím, név(Felhasználónév), keresztnév, vezetéknév, és jelszó megadásával. Amikor rányomunk a regisztráció gombra akkor elküdi a 
+  regisztrációt a backendre és átvizs a viszaigazolás oldara.
 - **Viszaigazolás:** Felhasználói fiók aktiválása az e-mailben kapot  5 számjegyű kódal.
-- **Kosár:** A kiválasztott termékeket itt tárolodnak vásárlás előtt, láthato termék neve:, mennyisége, a kosárhoz adás ideje.
-- Ha a megrendelés gombra katintunk akkor átvizs a rendelés oldara.
+  Ha a megerősités gombra katintunk akkor átvizs a bejelenkezés oldara.
+- **Kosár:** A kiválasztott termékeket itt tárolodnak vásárlás előtt, láthato termék neve:, menyisége, a kosárhoz adás ideje.
+  Ha a megrendelés gombra katintunk akkor átvizs a rendelés oldara.
 - **Rendelés:** Felhasználók megadják az adataikat és leadják a rendelés amiről e-mail értesitést kapnak.
 - **Felhasználó-Rendelések:** Felhasználók visszatekinthetnek korábbi rendeléseikre és nyomon követhetik azok állapotát.
 
