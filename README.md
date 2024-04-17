@@ -1,5 +1,4 @@
-# Bikeapi Frontend Dokumentáció
-# <p style="text-align: center;">Text_content</p>
+#                                Bikeapi Frontend Dokumentáció
 
 # Felhasználói Dokumentáció
 
